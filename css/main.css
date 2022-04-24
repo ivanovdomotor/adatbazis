@@ -1,0 +1,17 @@
+body{
+    background-color: #2c3034 !important;
+}
+
+#fejlec{
+    margin-top: 20px;
+    background-color: #6f42c1;
+}
+
+#logo{
+    height: 100px;
+    margin: 10%;
+}
+
+.reverse{
+    filter: invert(92%) sepia(44%) saturate(0%) hue-rotate(110deg) brightness(110%) contrast(100%);
+}
