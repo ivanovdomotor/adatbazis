@@ -28,16 +28,11 @@ if(true){ //$_POST["isAllaskereso"] == yes
     }
 
     $sql_text = "INSERT INTO FELHASZNALO(ID, FELHASZNALONEV, JELSZO, STATUS, IS_ADMIN, ALLASKERESO_ID, ALLASHIRDETO_ID)
-    VALUES :id, :login, :password, 1, 0, :allasker_id, null";
+    VALUES {$felhasznalo_id}, {$_POST["login"]}, {$_POST["password"]}, 1, 0, {$allaskereso_id}, null";
 
     if(isset($conn)){
 
         $stid = oci_parse($conn, $sql_text);
-
-        oci_bind_by_name($stid, ':id', $felhasznalo_id);
-        oci_bind_by_name($stid, ':login', $_POST["login"]);
-        oci_bind_by_name($stid, ':password', $_POST["password"]);
-        oci_bind_by_name($stid, ':allasker_id', $allaskereso_id);
 
         oci_execute($stid);
 
