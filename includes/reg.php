@@ -106,7 +106,7 @@ $_SESSION["page"] = "reg.php";
                 <input required type="text" id="tarthely" name="tarthely" maxlength="50" tabindex="10" placeholder="Település, Utca neve, házszám">
                 <br/>
                 <label for="telszam">Telefonszám:</label>
-                <input required type="tel" id="telszam" name="telszam" maxlength="11" placeholder="06-70-123-4567" tabindex="11" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}">
+                <input required type="tel" id="telszam" name="telszam" maxlength="14" placeholder="06-70-123-4567" tabindex="11" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}">
                 <br/>
                 <label required for="email">E-mail cím:</label>
                 <input required type="email" id="email" name="email" tabindex="12" placeholder="valami@valami.hu" />
@@ -152,13 +152,14 @@ $_SESSION["page"] = "reg.php";
 
     //jelszocheck allaskereso
     function jelszoellenorzes() {
-        var jelszo = document.getElementById("password-b").value
-        var jelszoismetles = document.getElementById("password2-b").value
+        var jelszo = document.getElementById("password").value
+        var jelszoismetles = document.getElementById("password2").value
         if (jelszo !== jelszoismetles) {
             window.alert("A jelszavak nem egyeznek!")
         } else {
             window.alert("TEST: A JELSZAVAK EGYEZNEK")}
     }
+
 
 
 </script>
