@@ -28,7 +28,7 @@ if(true){ //$_POST["isAllaskereso"] == yes
     }
 
     $sql_text = "INSERT INTO FELHASZNALO(ID, FELHASZNALONEV, JELSZO, STATUS, IS_ADMIN, ALLASKERESO_ID, ALLASHIRDETO_ID)
-    VALUES {$felhasznalo_id}, {$_POST["login"]}, {$_POST["password"]}, 1, 0, {$allaskereso_id}, null";
+    VALUES({$felhasznalo_id}, '{$_POST["login"]}', '{$_POST["password"]}', 1, 0, '{$allaskereso_id}', null)";
 
     if(isset($conn)){
 
