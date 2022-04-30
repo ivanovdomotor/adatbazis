@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - vasárnap-április-24-2022   
+--  File created - szombat-ï¿½prilis-30-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table ALLASHIRDETO
@@ -168,7 +168,7 @@ REM INSERTING into IVANOV.ALLASHIRDETO
 SET DEFINE OFF;
 REM INSERTING into IVANOV.ALLASKERESO
 SET DEFINE OFF;
-Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('1','dr.','Kiss','Konrád',null,to_date('90-ÁPR.  -01','RR-MON-DD'),'5440 Kunszentmárton, Kossuth u. 1.',null,'20','1','Gyógyszerészeti kémikus és egyéb laboráns munkakörök iránt érdeklõdik.',null,'06301234567','felh@fel.hu');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('1','dr.','Kiss','Konrï¿½d',null,to_date('90-ï¿½PR.  -01','RR-MON-DD'),'5440 Kunszentmï¿½rton, Kossuth u. 1.',null,'20','1','Gyï¿½gyszerï¿½szeti kï¿½mikus ï¿½s egyï¿½b laborï¿½ns munkakï¿½rï¿½k irï¿½nt ï¿½rdeklï¿½dik.',null,'06301234567','felh@fel.hu');
 REM INSERTING into IVANOV.CEG
 SET DEFINE OFF;
 REM INSERTING into IVANOV.FELHASZNALO
@@ -182,21 +182,21 @@ Insert into IVANOV.ONELETRAJZ (ID,VEGZETTSEG_ID,TAPASZTALAT_ID,SOFTSKILL_ID,REFE
 REM INSERTING into IVANOV.SOFTSKILL
 SET DEFINE OFF;
 Insert into IVANOV.SOFTSKILL (ID,NEV) values ('1','pontos');
-Insert into IVANOV.SOFTSKILL (ID,NEV) values ('2','jó vezetõ');
-Insert into IVANOV.SOFTSKILL (ID,NEV) values ('3','könnyen alkalmazkodó');
-Insert into IVANOV.SOFTSKILL (ID,NEV) values ('4','határozott');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('2','jï¿½ vezetï¿½');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('3','kï¿½nnyen alkalmazkodï¿½');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('4','hatï¿½rozott');
 REM INSERTING into IVANOV.TAPASZTALAT
 SET DEFINE OFF;
-Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('1','Szeged, Minta Bt.',to_date('15-MÁJ.  -22','RR-MON-DD'),to_date('19-DEC.  -31','RR-MON-DD'),'Laborasszisztens');
-Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('2','Szeged, SZTE',to_date('17-ÁPR.  -30','RR-MON-DD'),null,'Külsõs gyakorlatvezetõ');
-Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('3','Egyéni vállalkozás',to_date('20-FEBR. -01','RR-MON-DD'),null,'Laboreszközök és anyagok beszerzése, elszállítása');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('1','Szeged, Minta Bt.',to_date('15-Mï¿½J.  -22','RR-MON-DD'),to_date('19-DEC.  -31','RR-MON-DD'),'Laborasszisztens');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('2','Szeged, SZTE',to_date('17-ï¿½PR.  -30','RR-MON-DD'),null,'Kï¿½lsï¿½s gyakorlatvezetï¿½');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('3','Egyï¿½ni vï¿½llalkozï¿½s',to_date('20-FEBR. -01','RR-MON-DD'),null,'Laboreszkï¿½zï¿½k ï¿½s anyagok beszerzï¿½se, elszï¿½llï¿½tï¿½sa');
 REM INSERTING into IVANOV.TEST
 SET DEFINE OFF;
 Insert into IVANOV.TEST (ID,FELHASZNALONEV,JELSZO,STATUS) values ('1','Asd','sdsasdsads','1');
 REM INSERTING into IVANOV.VEGZETTSEG
 SET DEFINE OFF;
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('1','SZTE',to_date('09-JAN.  -01','RR-MON-DD'),to_date('14-JAN.  -01','RR-MON-DD'),'Gyógyszerészeti kémikus BSc + MSc képzés (summa cum laude)');
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('2','PKE',to_date('14-JAN.  -01','RR-MON-DD'),to_date('16-JAN.  -01','RR-MON-DD'),'Laborbiztonsági technikusi szakirányú továbbképzés');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('1','SZTE',to_date('09-JAN.  -01','RR-MON-DD'),to_date('14-JAN.  -01','RR-MON-DD'),'Gyï¿½gyszerï¿½szeti kï¿½mikus BSc + MSc kï¿½pzï¿½s (summa cum laude)');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('2','PKE',to_date('14-JAN.  -01','RR-MON-DD'),to_date('16-JAN.  -01','RR-MON-DD'),'Laborbiztonsï¿½gi technikusi szakirï¿½nyï¿½ tovï¿½bbkï¿½pzï¿½s');
 --------------------------------------------------------
 --  DDL for Index ALLASKERESO_PK
 --------------------------------------------------------

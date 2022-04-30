@@ -3,25 +3,49 @@ session_start();
 
 if(!isset($_POST["login"]) ||
     !isset($_POST["password"]) ||
-    !isset($_POST["password2"]) ||
-    (!isset($_POST["allaskereso"]))
+    !isset($_POST["password2"])
     ){
-    header("Location: reg.php");
-    exit();
+    echo "NEM JÓ";
 }
 
-if($_POST["isAllaskereso"]=="yes"){
-    $sql_text="SELECT ID FROM FELHASZNALO ORDER BY ID DESC";
-    include 'oci_select.php';
-    if(isset($mymap[0])){
-        $felhasznalo_id = intval($mymap[0]["ID"])+1;
-    }
+include 'oci_conn_start.php';
+
+
+$sql_text = "SELECT ID FROM FELHASZNALO ORDER BY ID DESC";
+include 'oci_select.php';
+if (isset($mymap[0])) {
+    $felhasznalo_id = intval($mymap[0]["ID"]) + 1;
+}
+
+if(true){ //$_POST["isAllaskereso"] == yes
 
     $sql_text="SELECT ID FROM ALLASKERESO ORDER BY ID DESC";
     include 'oci_select.php';
     if(isset($mymap[0])){
         $allaskereso_id = intval($mymap[0]["ID"])+1;
     }
+
+    $sql_text = "INSERT INTO FELHASZNALO(ID,FELHASZNALONEV, JELSZO, ALLASKERESO_ID)
+    VALUES ':id' ':login', ':password', ':allas_id'";
+
+    oci_bind_by_name($sql_text, ':id', $url_name);
+
+    include 'oci_insert.php';
+
+}else{
+
+    $sql_text="SELECT ID FROM ALLASHIRDETO ORDER BY ID DESC";
+    include 'oci_select.php';
+    if(isset($mymap[0])){
+        $allaskereso_id = intval($mymap[0]["ID"])+1;
+    }else{
+        $allaskereso_id = 1;
+    }
+
+}
+
+
+/*
 
     $sql_text = "INSERT INTO FELHASZNALO(ID,FELHASZNALONEV, JELSZO, ALLASKERESO_ID)
     VALUES '{$felhasznalo_id}' '{$_POST['login']}', '{$_POST['password']}', '{$allaskereso_id}'";
@@ -38,9 +62,5 @@ if($_POST["isAllaskereso"]=="yes"){
      '{$_POST['szulido']}', '{$_POST['lakcim']}', '{$_POST['tarthely']}', '{$_POST['radius']}', '{$oneletrajz_id}', '{$_POST['rovid_leiras']}',
         '{$_POST['telefonszam']}', '{$_POST['email']}'";
     include 'oci_insert.php';
-
-}
-
-
-
+*/
 ?>
