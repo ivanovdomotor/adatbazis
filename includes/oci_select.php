@@ -1,15 +1,11 @@
 <?php
 //Szükség van egy $sql_textre, ami tartalmazza a select lekérdezést (pl. 'SELECT * FROM TEST')
 //A lekérdezés után a kód a választ eltárolja az $mymapba
+//Előtte mindig meg kell hívni az oci_conn_start.php-t, ami megnyitja a kapcsolatot
+//Ha már nem hívjuk meg a php lekérdezésben többször, akkor hívjuk meg az oci_conn_stop.php-t, ami lezárja a kapcsolatot
 
 $mymap = [];
-if(isset($sql_text)){
-
-    $conn = oci_connect('ivanov', 'ivanov', 'localhost/XE');
-    if(!$conn){
-        $e = oci_error();
-        trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-    }
+if(isset($sql_text) && isset($conn)){
 
     $stid = oci_parse($conn, $sql_text);
     $r = oci_execute($stid);
@@ -20,7 +16,6 @@ if(isset($sql_text)){
     }
 
     oci_free_statement($stid);
-    oci_close($conn);
 
     unset($sql_text);
 }

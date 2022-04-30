@@ -5,7 +5,7 @@ $_SESSION["page"] = "reg.php";
 
 ?>
 
-<link href="../css/login.css" rel="stylesheet" >
+<link href="../css/reg.css" rel="stylesheet" >
 <link href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <div class="wrapper fadeInDown">
     <div id="formContent">
@@ -31,35 +31,35 @@ $_SESSION["page"] = "reg.php";
 
         <!--//álláshirdető -->
         <div id="form-b" hidden>
-        <form method = "post" action="regisztracio.php" enctype="multipart/form-data">
+        <form method = "post" action="_reg_action.php" enctype="multipart/form-data">
             <fieldset>
                 <label for="felhasznalo">Felhasználónév:</label>
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Felhasználónév" required>
+                <input type="text" id="login-b" class="fadeIn second" name="login" placeholder="Felhasználónév" required>
                 <br/>
                 <label for="password">Jelszó:</label>
-                <input type="password" id="password1" class="fadeIn third" name="password" placeholder="*********" oninput="checkpasswords(this)" required>
+                <input type="password" id="password-b" class="fadeIn third" name="password" placeholder="*********" required>
                 <br/>
                 <label for="password2">Jelszó ismét:</label>
-                <input type="password" id="password2" class="fadeIn third" name="password2" placeholder="*********" required>
+                <input type="password" id="password2-b" class="fadeIn third" name="password2" placeholder="*********" required>
                 <br/>
                 <label for="titulus">Titulus:</label>
-                <input required type="text" id="titulus" name="nev" maxlength="50" tabindex="1" placeholder="Dr.">
+                <input required type="text" id="titulus-b" name="nev" maxlength="50" tabindex="1" placeholder="Dr.">
                 <br/>
                 <label for="vezetéknév">Vezetéknév:</label>
-                <input required type="text" id="vezeteknev" name="nev" maxlength="50" tabindex="1" placeholder="Kovács">
+                <input required type="text" id="vezeteknev-b" name="nev" maxlength="50" tabindex="1" placeholder="Kovács">
                 <br/>
                 <label for="keresztnév">Keresztnév név:</label>
-                <input required type="text" id="keresztnev" name="nev" maxlength="50" tabindex="1" placeholder="János">
+                <input required type="text" id="keresztnev-b" name="nev" maxlength="50" tabindex="1" placeholder="János">
                 <br/>
                 <label for="kep">Profilkép: </label>
                 <br/>
-                <input type="file" id="kep" name="kep" accept="image/*" tabindex="7"/>
+                <input type="file" id="kep-b" name="kep" accept="image/*" tabindex="7"/>
                 <br/>
                 <label for="telszam">Telefonszám:</label>
-                <input required type="tel" id="telszam" name="telszam" maxlength="11" placeholder="06701234567" tabindex="5" >
+                <input required type="tel" id="telszam-b" name="telszam" maxlength="11" placeholder="06701234567" tabindex="5" >
                 <br/>
                 <label required for="email">E-mail cím:</label>
-                <input required type="email" id="email" name="email" tabindex="6" placeholder="valami@valami.hu" />
+                <input required type="email" id="email-b" name="email" tabindex="6" placeholder="valami@valami.hu" />
                 <br/>
             </fieldset>
 
@@ -71,16 +71,16 @@ $_SESSION["page"] = "reg.php";
         </div>
         <!--//álláskereső:-->
         <div id="form-a" hidden>
-        <form method = "post" action="regisztracio.php" enctype="multipart/form-data">
+        <form method = "post" action="_reg_action.php" enctype="multipart/form-data">
             <fieldset>
                 <label for="felhasznalo">Felhasználónév:</label>
                 <input type="text" id="login" class="fadeIn second" name="login" placeholder="Felhasználónév" required>
                 <br/>
                 <label for="password">Jelszó:</label>
-                <input type="password" id="password3" class="fadeIn third" name="password" placeholder="*********" oninput="checkpasswords(this)" required >
+                <input type="password" id="password" class="fadeIn third" name="password" placeholder="*********" required >
                 <br/>
                 <label for="password2">Jelszó ismét:</label>
-                <input type="password" id="password4" class="fadeIn third" name="password2" placeholder="*********" required>
+                <input type="password" id="password2" class="fadeIn third" name="password2" placeholder="*********" required>
                 <br/>
                 <label for="titulus">Titulus:</label>
                 <input required type="text" id="titulus" name="nev" maxlength="50" tabindex="1" placeholder="Dr.">
@@ -102,10 +102,10 @@ $_SESSION["page"] = "reg.php";
                 <input required type="text" id="lakcim" name="lakcim" maxlength="50" tabindex="1" placeholder="Település, Utca neve, házszám">
                 <br/>
                 <label for="tarthely">Tartózkodási hely</label>
-                <input required type="text" id="tarthely" name="tarthely" maxlength="50" tabindex="1" placeholder="sxaxas">
+                <input required type="text" id="tarthely" name="tarthely" maxlength="50" tabindex="1" placeholder="Település, Utca neve, házszám">
                 <br/>
                 <label for="telszam">Telefonszám:</label>
-                <input required type="tel" id="telszam" name="telszam" maxlength="11" placeholder="06701234567" tabindex="5" >
+                <input required type="tel" id="telszam" name="telszam" maxlength="11" placeholder="06-70-123-4567" tabindex="5" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}">
                 <br/>
                 <label required for="email">E-mail cím:</label>
                 <input required type="email" id="email" name="email" tabindex="6" placeholder="valami@valami.hu" />
@@ -134,25 +134,8 @@ $_SESSION["page"] = "reg.php";
         }
     }
 
-    function checkpasswords(element){
-        if(element.id === "password1" && document.getElementById("form-b").hidden === false){
-            if(element.value !== document.getElementById("password2").value){
-                document.getElementById("submit1").disabled = true;
-                element.setAttribute("class", "fadeIn third bg-danger");
-            }else{
-                document.getElementById("submit1").disabled = false;
-                element.setAttribute("class", "fadeIn third");
-            }
-        }else{
-            if(element.value !== document.getElementById("password4").value){
-                document.getElementById("submit2").disabled = true;
-                element.setAttribute("class", "fadeIn third bg-danger");
-            }else{
-                document.getElementById("submit2").disabled = false;
-                element.setAttribute("class", "fadeIn third");
-            }
-        }
 
-    }
 
+
+    show(1);
 </script>

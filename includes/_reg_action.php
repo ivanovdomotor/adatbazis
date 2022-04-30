@@ -6,7 +6,7 @@ if(!isset($_POST["login"]) ||
     !isset($_POST["password2"]) ||
     (!isset($_POST["allaskereso"]))
     ){
-    header("Location: {$_SESSION["page"]} ");
+    header("Location: reg.php");
     exit();
 }
 
@@ -38,8 +38,6 @@ if($_POST["isAllaskereso"]=="yes"){
      '{$_POST['szulido']}', '{$_POST['lakcim']}', '{$_POST['tarthely']}', '{$_POST['radius']}', '{$oneletrajz_id}', '{$_POST['rovid_leiras']}',
         '{$_POST['telefonszam']}', '{$_POST['email']}'";
     include 'oci_insert.php';
-
-
 
 }
 

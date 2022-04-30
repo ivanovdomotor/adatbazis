@@ -1,19 +1,14 @@
 <?php
 //Szükség van egy sql insert lekérésre ($sql_text)
+//Előtte mindig meg kell hívni az oci_conn_start.php-t, ami megnyitja a kapcsolatot
+//Ha már nem hívjuk meg a php lekérdezésben többször, akkor hívjuk meg az oci_conn_stop.php-t, ami lezárja a kapcsolatot
 
-if(isset($sql_text)){
-
-    $conn = oci_connect('ivanov', 'ivanov', 'localhost/XE');
-    if(!$conn){
-        $e = oci_error();
-        trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-    }
+if(isset($sql_text) && isset($conn)){
 
     $stid = oci_parse($conn, $sql_text);
     $r = oci_execute($stid);
 
     oci_free_statement($stid);
-    oci_close($conn);
 
     unset($sql_text);
 }

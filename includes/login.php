@@ -1,5 +1,7 @@
 <?php
 session_start();
+include 'oci_conn_start.php';
+
 $_SESSION["page"] = "login.php";
 
 ?>
@@ -50,3 +52,7 @@ $_SESSION["page"] = "login.php";
 
   </div>
 </div>
+
+<?php
+include 'oci_conn_stop.php';
+?>
