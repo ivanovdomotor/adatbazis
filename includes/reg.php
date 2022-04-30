@@ -147,7 +147,10 @@ $_SESSION["page"] = "reg.php";
         if (jelszo !== jelszoismetles) {
         window.alert("A jelszavak nem egyeznek!")
     } else {
-        window.alert("TEST: A JELSZAVAK EGYEZNEK")}
+        window.alert("TEST: A JELSZAVAK EGYEZNEK")
+            document.getElementById('form-b').submit();
+        }
+
     }
 
     //jelszocheck allaskereso
@@ -157,7 +160,9 @@ $_SESSION["page"] = "reg.php";
         if (jelszo !== jelszoismetles) {
             window.alert("A jelszavak nem egyeznek!")
         } else {
-            window.alert("TEST: A JELSZAVAK EGYEZNEK")}
+            window.alert("TEST: A JELSZAVAK EGYEZNEK")
+            document.getElementById('form-a').submit();
+        }
     }
 
 
