@@ -65,22 +65,9 @@ $_SESSION["page"] = "reg.php";
 
             <br/>
 
-<script>
-            function jelszoellenorzes(jelszocheck) {
-            jelszocheck.preventDefault
-            var jelszo = document.getElementById("password").value
-            var jelszoismetles = document.getElementById("password2").value
-if {
-            (jelszo !== jelszoismetles) {
-                window.alert("A jelszavak nem egyeznek!")
-                }
-            } else {
-window.alert("TEST: A JELSZAVAK EGYEZNEK")}
-            }
-</script>
 
             <input type="reset" name="reset-btn" value="Adatok törlése" tabindex="10"/>
-            <input type="button" id="submit1" onclick="jelszoellenorzes(jelszocheck)" name="submit-btn" value="Regisztráció" tabindex="11"/>
+            <input type="button" id="submit1" onclick="jelszoellenorzes(this)" name="submit-btn" value="Regisztráció" tabindex="11"/>
             </form>
         </div>
         <!--//álláskereső:-->
@@ -135,9 +122,11 @@ window.alert("TEST: A JELSZAVAK EGYEZNEK")}
     </div>
 </div>
 
-<!-- JS script a radio buttonokre-->
+
 <script type="text/javascript">
 
+
+    //button
     function show(x){
         if(x==0){
             document.getElementById("form-a").hidden = true;
@@ -148,8 +137,17 @@ window.alert("TEST: A JELSZAVAK EGYEZNEK")}
         }
     }
 
-
-
-
     show(1);
+
+
+    //jelszocheck
+        function jelszoellenorzes(jelszocheck) {
+        var jelszo = document.getElementById("password-b").value
+        var jelszoismetles = document.getElementById("password2-b").value
+        if (jelszo !== jelszoismetles) {
+        window.alert("A jelszavak nem egyeznek!")
+    } else {
+        window.alert("TEST: A JELSZAVAK EGYEZNEK")}
+    }
+
 </script>
