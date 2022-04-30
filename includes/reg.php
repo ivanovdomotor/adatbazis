@@ -140,7 +140,7 @@ $_SESSION["page"] = "reg.php";
     show(1);
 
 
-    //jelszocheck
+    //jelszocheck allashirdeto
         function jelszoellenorzes(jelszocheck) {
         var jelszo = document.getElementById("password-b").value
         var jelszoismetles = document.getElementById("password2-b").value
@@ -149,5 +149,16 @@ $_SESSION["page"] = "reg.php";
     } else {
         window.alert("TEST: A JELSZAVAK EGYEZNEK")}
     }
+
+    //jelszocheck allaskereso
+    function jelszoellenorzes() {
+        var jelszo = document.getElementById("password-b").value
+        var jelszoismetles = document.getElementById("password2-b").value
+        if (jelszo !== jelszoismetles) {
+            window.alert("A jelszavak nem egyeznek!")
+        } else {
+            window.alert("TEST: A JELSZAVAK EGYEZNEK")}
+    }
+
 
 </script>
