@@ -31,7 +31,7 @@ $_SESSION["page"] = "reg.php";
 
         <!--//álláshirdető -->
         <div id="form-b" hidden>
-        <form method = "post" action="_reg_action.php" enctype="multipart/form-data">
+        <form id="trueform-b" method = "post" action="_reg_action.php" enctype="multipart/form-data">
             <fieldset>
                 <label for="felhasznalo">Felhasználónév:</label>
                 <input type="text" id="login-b" class="fadeIn second" name="login" tabindex="1" placeholder="Felhasználónév" required>
@@ -72,7 +72,7 @@ $_SESSION["page"] = "reg.php";
         </div>
         <!--//álláskereső:-->
         <div id="form-a" hidden>
-        <form method = "post" action="_reg_action.php" enctype="multipart/form-data">
+        <form id="trueform-a" method = "post" action="_reg_action.php" enctype="multipart/form-data">
             <fieldset>
                 <label for="felhasznalo">Felhasználónév:</label>
                 <input type="text" id="login" class="fadeIn second" name="login" tabindex="1" placeholder="Felhasználónév" required>
@@ -148,7 +148,7 @@ $_SESSION["page"] = "reg.php";
         window.alert("A jelszavak nem egyeznek!");
     } else {
         window.alert("TEST: A JELSZAVAK EGYEZNEK");
-            document.getElementById('form-b').submit();
+            document.getElementById('trueform-b').submit();
         }
 
     }
@@ -161,7 +161,7 @@ $_SESSION["page"] = "reg.php";
             window.alert("A jelszavak nem egyeznek!");
         } else {
             window.alert("TEST: A JELSZAVAK EGYEZNEK");
-            document.getElementById('form-a').submit();
+            document.getElementById('trueform-a').submit();
         }
     }
 
