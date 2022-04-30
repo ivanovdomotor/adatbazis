@@ -142,12 +142,12 @@ $_SESSION["page"] = "reg.php";
 
     //jelszocheck allashirdeto
         function jelszoellenorzeshirdeto(jelszocheck) {
-        var jelszo = document.getElementById("password-b").value
-        var jelszoismetles = document.getElementById("password2-b").value
+        var jelszo = document.getElementById("password-b").value;
+        var jelszoismetles = document.getElementById("password2-b").value;
         if (jelszo !== jelszoismetles) {
-        window.alert("A jelszavak nem egyeznek!")
+        window.alert("A jelszavak nem egyeznek!");
     } else {
-        window.alert("TEST: A JELSZAVAK EGYEZNEK")
+        window.alert("TEST: A JELSZAVAK EGYEZNEK");
             document.getElementById('form-b').submit();
         }
 
@@ -155,12 +155,12 @@ $_SESSION["page"] = "reg.php";
 
     //jelszocheck allaskereso
     function jelszoellenorzeskereso() {
-        var jelszo = document.getElementById("password").value
-        var jelszoismetles = document.getElementById("password2").value
+        var jelszo = document.getElementById("password").value;
+        var jelszoismetles = document.getElementById("password2").value;
         if (jelszo !== jelszoismetles) {
-            window.alert("A jelszavak nem egyeznek!")
+            window.alert("A jelszavak nem egyeznek!");
         } else {
-            window.alert("TEST: A JELSZAVAK EGYEZNEK")
+            window.alert("TEST: A JELSZAVAK EGYEZNEK");
             document.getElementById('form-a').submit();
         }
     }
