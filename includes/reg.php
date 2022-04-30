@@ -67,7 +67,7 @@ $_SESSION["page"] = "reg.php";
 
 
             <input type="reset" name="reset-btn" value="Adatok törlése" tabindex="10"/>
-            <input type="button" id="submit1" onclick="jelszoellenorzes(this)" name="submit-btn" value="Regisztráció" tabindex="11"/>
+            <input type="button" id="submit1" onclick="jelszoellenorzeshirdeto(this)" name="submit-btn" value="Regisztráció" tabindex="11"/>
             </form>
         </div>
         <!--//álláskereső:-->
@@ -109,14 +109,14 @@ $_SESSION["page"] = "reg.php";
                 <input required type="tel" id="telszam" name="telszam" maxlength="14" placeholder="06-70-123-4567" tabindex="11" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}">
                 <br/>
                 <label required for="email">E-mail cím:</label>
-                <input required type="email" id="email" name="email" tabindex="12" placeholder="valami@valami.hu" />
+                <input required type="email" id="email"  name="email" tabindex="12" placeholder="valami@valami.hu" />
                 <br/>
             </fieldset>
 
             <br/>
 
             <input type="reset" name="reset-btn" value="Adatok törlése" tabindex="13"/>
-            <input type="submit" id="submit2" name="submit-btn" value="Regisztráció" tabindex="14"/>
+            <input type="button" id="submit2" onclick="jelszoellenorzeskereso(this)" name="submit-btn" value="Regisztráció" tabindex="14"/>
         </form>
         </div>
     </div>
@@ -141,7 +141,7 @@ $_SESSION["page"] = "reg.php";
 
 
     //jelszocheck allashirdeto
-        function jelszoellenorzes(jelszocheck) {
+        function jelszoellenorzeshirdeto(jelszocheck) {
         var jelszo = document.getElementById("password-b").value
         var jelszoismetles = document.getElementById("password2-b").value
         if (jelszo !== jelszoismetles) {
@@ -151,7 +151,7 @@ $_SESSION["page"] = "reg.php";
     }
 
     //jelszocheck allaskereso
-    function jelszoellenorzes() {
+    function jelszoellenorzeskereso() {
         var jelszo = document.getElementById("password").value
         var jelszoismetles = document.getElementById("password2").value
         if (jelszo !== jelszoismetles) {
