@@ -23,14 +23,27 @@ if(true){ //$_POST["isAllaskereso"] == yes
     include 'oci_select.php';
     if(isset($mymap[0])){
         $allaskereso_id = intval($mymap[0]["ID"])+1;
+    }else{
+        $allaskereso_id = 1;
     }
 
-    $sql_text = "INSERT INTO FELHASZNALO(ID,FELHASZNALONEV, JELSZO, ALLASKERESO_ID)
-    VALUES ':id' ':login', ':password', ':allas_id'";
+    $sql_text = "INSERT INTO FELHASZNALO(ID, FELHASZNALONEV, JELSZO, STATUS, IS_ADMIN, ALLASKERESO_ID, ALLASHIRDETO_ID)
+    VALUES :id, :login, :password, 1, 0, :allasker_id, null";
 
-    oci_bind_by_name($sql_text, ':id', $url_name);
+    if(isset($conn)){
 
-    include 'oci_insert.php';
+        $stid = oci_parse($conn, $sql_text);
+
+        oci_bind_by_name($stid, ':id', $felhasznalo_id);
+        oci_bind_by_name($stid, ':login', $_POST["login"]);
+        oci_bind_by_name($stid, ':password', $_POST["password"]);
+        oci_bind_by_name($stid, ':allasker_id', $allaskereso_id);
+
+        oci_execute($stid);
+
+        oci_free_statement($stid);
+        unset($sql_text);
+    }
 
 }else{
 
