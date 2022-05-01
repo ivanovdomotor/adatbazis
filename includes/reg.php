@@ -13,19 +13,20 @@ $_SESSION["page"] = "reg.php";
         <div class="fadeIn first">
             <img src="../icons/person-plus.svg" id="icon" alt="User Icon" />
         </div>
-
+        <h4>Regisztrálok az oldalra...</h4>
         <!-- Login Form -->
         <div class="form-check form-check-inline" >
             <input class="btn-check"  type="radio" name="isAllaskereso" id="radios1" value="yes" onchange="show(1)" checked>
-            <label class="btn btn-outline-primary" id="radios1label" for="radios1">
-                Álláskereső
+            <label class="btn btn-outline-success" id="radios1label" for="radios1">
+                ...álláskeresőként!
             </label>
             <input class="btn-check"  type="radio" name="isAllaskereso" id="radios2" value="no" onchange="show(0)">
-            <label class="btn btn-outline-primary" id="radios2label" for="radios2">
-                Álláshirdető
+            <label class="btn btn-outline-success" id="radios2label" for="radios2">
+                ...álláshirdetőként!
             </label>
         </div>
 
+        <br><br>
         <!--//álláshirdető -->
         <div id="form-b" hidden>
         <form id="trueform-b" method = "post" action="_reg_action.php" enctype="multipart/form-data">
@@ -63,9 +64,15 @@ $_SESSION["page"] = "reg.php";
 
             <br/>
 
+            <div class="btn-group" role="group">
+                <button class="btn btn-danger" type="reset" name="reset-btn" value="Adatok törlése" tabindex="10" onlcick="erase()">
+                    Adatok törlése
+                </button>
+                <button class="btn btn-primary" type="button" id="submit1" onclick="jelszoellenorzeshirdeto(this)" name="submit-btn" value="Regisztráció" tabindex="11">
+                    Regisztráció
+                </button>
+            </div>
 
-            <input type="reset" name="reset-btn" value="Adatok törlése" tabindex="10"/>
-            <input type="button" id="submit1" onclick="jelszoellenorzeshirdeto(this)" name="submit-btn" value="Regisztráció" tabindex="11"/>
             </form>
         </div>
         <!--//álláskereső:-->
@@ -114,9 +121,16 @@ $_SESSION["page"] = "reg.php";
 
             <br/>
 
-            <input type="reset" name="reset-btn" value="Adatok törlése" tabindex="13"/>
-            <input type="button" id="submit2" onclick="jelszoellenorzeskereso(this)" name="submit-btn" value="Regisztráció" tabindex="14"/>
-        </form>
+            <div class="btn-group" role="group">
+                <button class="btn btn-danger" type="reset" name="reset-btn" value="Adatok törlése" tabindex="10" onlcick="erase()">
+                    Adatok törlése
+                </button>
+                <button class="btn btn-primary" type="button" id="submit1" onclick="jelszoellenorzeshirdeto(this)" name="submit-btn" value="Regisztráció" tabindex="11">
+                    Regisztráció
+                </button>
+            </div>
+
+            </form>
         </div>
 
     </div>
@@ -131,32 +145,32 @@ $_SESSION["page"] = "reg.php";
         if(x==0){
             document.getElementById("form-a").hidden = true;
             document.getElementById("form-b").hidden = false;
-
-            document.getElementById("radios1label").setAttribute("class","btn btn-primary")
-            document.getElementById("radios2label").setAttribute("class","btn btn-outline-primary")
         }else{
             document.getElementById("form-a").hidden = false;
             document.getElementById("form-b").hidden = true;
-
-            document.getElementById("radios1label").setAttribute("class","btn btn-outline-primary")
-            document.getElementById("radios2label").setAttribute("class","btn btn-primary")
         }
     }
 
     show(1);
+
+    function erase(){
+        let inputs = document.getElementsByTagName("input");
+        for(const input of inputs){
+            input.value = "";
+        }
+    }
 
 
     //jelszocheck allashirdeto
         function jelszoellenorzeshirdeto(jelszocheck) {
         var jelszo = document.getElementById("password-b").value;
         var jelszoismetles = document.getElementById("password2-b").value;
+
         if (jelszo !== jelszoismetles) {
         window.alert("A jelszavak nem egyeznek!");
-    } else {
-        window.alert("TEST: A JELSZAVAK EGYEZNEK");
+        } else {
             document.getElementById('trueform-b').submit();
         }
-
     }
 
     //jelszocheck allaskereso
