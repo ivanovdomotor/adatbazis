@@ -86,13 +86,13 @@ $_SESSION["page"] = "reg.php";
                 <input type="password" id="password2" class="fadeIn third" name="password2" tabindex="3" placeholder="*********" required>
                 <br/>
                 <label for="titulus">Titulus:</label>
-                <input required type="text" id="titulus" name="nev" maxlength="50" tabindex="4" placeholder="Dr.">
+                <input required type="text" id="titulus" name="titulus" maxlength="50" tabindex="4" placeholder="Dr.">
                 <br/>
                 <label for="vezetéknév">Vezetéknév:</label>
-                <input required type="text" id="vezeteknev" name="nev" maxlength="50" tabindex="5" placeholder="Kovács">
+                <input required type="text" id="vezeteknev" name="vezeteknev" maxlength="50" tabindex="5" placeholder="Kovács">
                 <br/>
                 <label for="keresztnév">Keresztnév név:</label>
-                <input required type="text" id="keresztnev" name="nev" maxlength="50" tabindex="6" placeholder="János">
+                <input required type="text" id="keresztnev" name="keresztnev" maxlength="50" tabindex="6" placeholder="János">
                 <br/>
                 <label for="kep">Profilkép: </label>
                 <br/>

@@ -26,9 +26,7 @@ $_SESSION["page"] = "login.php";
             </div>
             ";
         }
-        ?>
-    <form action="_login_action.php" method="post" >
-        <?php
+
         if(isset($_POST["hibas_felhasznalo"])){
             echo "
             <div class='alert alert-danger' role='alert'>
@@ -36,6 +34,15 @@ $_SESSION["page"] = "login.php";
             </div>
             ";
         }
+
+        if(isset($_POST["nincs_statusz"])){
+            echo "
+            <div class='alert alert-danger' role='alert'>
+            A megadott fehlasználó státusza nem aktív!
+            </div>
+            ";
+        }
+
         ?>
         <input type="text" id="login" class="fadeIn second" name="login" placeholder="Felhasználónév" required>
         <input type="password" id="password" class="fadeIn third" name="password" placeholder="Jelszó" required>
