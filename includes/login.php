@@ -48,7 +48,7 @@ $_SESSION["page"] = "login.php";
         <input type="password" id="password" class="fadeIn third" name="password" placeholder="Jelszó" required>
         <div class="btn-group">
             <button class="btn alert-info" type="submit" class="fadeIn fourth" value="Bejelentkezés">Bejelentkezés</button>
-            <button class="btn alert-success" type="button" a href="reg.php" form="register" value="Regisztráció">Regisztráció</button>
+            <button class="btn alert-success" type="button" onclick="toReg()" form="register" value="Regisztráció">Regisztráció</button>
         </div>
 
 
@@ -58,3 +58,9 @@ $_SESSION["page"] = "login.php";
 
   </div>
 </div>
+<script>
+    function toReg(){
+        window.location.href = "reg.php";
+    }
+
+</script>

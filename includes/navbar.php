@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 
 <nav class="navbar navbar-expand navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">

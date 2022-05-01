@@ -13,6 +13,41 @@ $_SESSION["page"] = "reg.php";
         <div class="fadeIn first">
             <img src="../icons/person-plus.svg" id="icon" alt="User Icon" />
         </div>
+        <?php
+        if(isset($_POST["hiba"])){
+            echo "
+            <div class='alert alert-danger' role='alert'>
+              Nem volt sikeres a regisztráció, kérlek, próbáld újra!
+            </div>
+            ";
+        }
+
+        if(isset($_POST["letezo_felhasznalo"])){
+            echo "
+            <div class='alert alert-danger' role='alert'>
+            A megadott felhasználó már létezik!
+            </div>
+            ";
+        }
+
+        if(isset($_POST["tul_nagy_kep"])){
+            echo "
+            <div class='alert alert-danger' role='alert'>
+            A feltölteni kívánt kép túl nagy!
+            </div>
+            ";
+        }
+
+        if(isset($_POST["nem_jo_format"])){
+            echo "
+            <div class='alert alert-danger' role='alert'>
+            A feltölteni kívánt kép nem JPG, PNG, vagy JPEG formátumú!
+            </div>
+            ";
+        }
+
+        ?>
+
         <h4>Regisztrálok az oldalra...</h4>
         <!-- Login Form -->
         <div class="form-check form-check-inline" >
@@ -25,6 +60,10 @@ $_SESSION["page"] = "reg.php";
                 ...álláshirdetőként!
             </label>
         </div>
+
+        <button class="btn alert-info" name="reset-btn" value="Login" onclick="toLog()">
+            Már regisztráltam, belépek!
+        </button>
 
         <br><br>
         <!--//álláshirdető -->
@@ -65,10 +104,10 @@ $_SESSION["page"] = "reg.php";
             <br/>
 
             <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="reset" name="reset-btn" value="Adatok törlése" tabindex="10" onlcick="erase()">
+                <button class="btn alert-danger" type="reset" name="reset-btn" value="Adatok törlése" tabindex="10" onlcick="erase()">
                     Adatok törlése
                 </button>
-                <button class="btn btn-primary" type="button" id="submit1" onclick="jelszoellenorzeshirdeto(this)" name="submit-btn" value="Regisztráció" tabindex="11">
+                <button class="btn alert-primary" type="button" id="submit1" onclick="jelszoellenorzeshirdeto(this)" name="submit-btn" value="Regisztráció" tabindex="11">
                     Regisztráció
                 </button>
             </div>
@@ -122,10 +161,10 @@ $_SESSION["page"] = "reg.php";
             <br/>
 
             <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="reset" name="reset-btn" value="Adatok törlése" tabindex="10" onlcick="erase()">
+                <button class="btn alert-danger" type="reset" name="reset-btn" value="Adatok törlése" tabindex="10" onclick="erase()">
                     Adatok törlése
                 </button>
-                <button class="btn btn-primary" type="button" id="submit1" onclick="jelszoellenorzeshirdeto(this)" name="submit-btn" value="Regisztráció" tabindex="11">
+                <button class="btn alert-primary" type="button" id="submit1" onclick="jelszoellenorzeshirdeto(this)" name="submit-btn" value="Regisztráció" tabindex="11">
                     Regisztráció
                 </button>
             </div>
@@ -158,6 +197,10 @@ $_SESSION["page"] = "reg.php";
         for(const input of inputs){
             input.value = "";
         }
+    }
+
+    function toLog(){
+        window.location.href = "login.php";
     }
 
 

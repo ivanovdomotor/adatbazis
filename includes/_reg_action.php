@@ -198,6 +198,16 @@ if(!isset($_POST["login"]) ||
     }
 }
 include 'oci_conn_stop.php';
+
+echo "
+        <div class='alert alert-info' role='alert'>
+        Sikeres regisztráció!
+        </div>
+        <button class='btn alert-info'name='reset-btn' value='Login' onclick='toLog()'>
+            Belépek!
+        </button>
+        ";
+
 ?>
 <script>
 
@@ -207,10 +217,16 @@ include 'oci_conn_stop.php';
         }
     }
 
+    function toLog(){
+        window.location.href = "login.php";
+    }
+
     mysubmit('hiba');
     mysubmit('letezo_felhasznalo');
     mysubmit('tul_nagy_kep');
     mysubmit('nem_jo_format');
+
+
 
 </script>
 
