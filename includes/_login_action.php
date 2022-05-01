@@ -21,6 +21,17 @@ if(isset($mymap[0])){
             </form>";
         }
 
+        $_SESSION['felhasznalo_id'] =
+        $_SESSION['jelszo'] = $mymap[0]["JELSZO"];
+        $_SESSION['isAdmin'] = $mymap[0]["IS_ADMIN"];
+        if($mymap[0]["ALLASHIRDETO_ID"] != null){
+            $_SESSION['isAllashirdeto'] = true;
+        }else{
+            $_SESSION['isAllashirdeto'] = false;
+        }
+
+
+
         echo "
         <form action='main.php' method='post' id='sikeres_bejelentkezes' hidden>
         <input name='login' value='{$_POST["login"]}'>
