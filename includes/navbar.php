@@ -1,6 +1,6 @@
 
 
-<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">
             <img src="../icons/briefcase-fill.svg" >
@@ -10,16 +10,16 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a id="main" class="nav-link active alert-primary" href="#">Hirdetések</a>
+                    <a id="main" class="nav-link active alert-primary" href="main.php">Hirdetések</a>
                 </li>
                 <li class="nav-item">
-                    <a id="cegek" class="nav-link" href="#">Cégek</a>
+                    <a id="cegek" class="nav-link" href="cegek.php">Cégek</a>
                 </li>
                 <li class="nav-item">
-                    <a id="adatok" class="nav-link" href="#">Adatok</a>
+                    <a id="adatok" class="nav-link" href="adatok.php">Adatok</a>
                 </li>
                 <li class="nav-item">
-                    <a id="statisztika" class="nav-link" href="#">Statisztika</a>
+                    <a id="statisztika" class="nav-link" href="statisztika.php">Statisztika</a>
                 </li>
             </ul>
 
