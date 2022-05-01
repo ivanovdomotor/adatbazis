@@ -5,7 +5,7 @@ if(!isset($_POST["login"]) ||
     !isset($_POST["password"]) ||
     !isset($_POST["password2"])
     ){
-    echo "NEM JÓ";
+    echo "HIBA, KÉREM, MENJEN VISSZA AZ ELŐZŐ OLDALRA!";
 }
 
 include 'oci_conn_start.php';
@@ -17,7 +17,7 @@ if (isset($mymap[0])) {
     $felhasznalo_id = intval($mymap[0]["ID"]) + 1;
 }
 
-if(true){ //$_POST["isAllaskereso"] == yes
+if($_POST["isAllaskereso"] == 'yes'){
 
     $sql_text="SELECT ID FROM ALLASKERESO ORDER BY ID DESC";
     include 'oci_select.php';

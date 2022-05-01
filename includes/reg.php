@@ -33,6 +33,7 @@ $_SESSION["page"] = "reg.php";
         <div id="form-b" hidden>
         <form id="trueform-b" method = "post" action="_reg_action.php" enctype="multipart/form-data">
             <fieldset>
+                <input name="isAllaskereso" value="no" hidden>
                 <label for="felhasznalo">Felhasználónév:</label>
                 <input type="text" id="login-b" class="fadeIn second" name="login" tabindex="1" placeholder="Felhasználónév" required>
                 <br/>
@@ -74,6 +75,7 @@ $_SESSION["page"] = "reg.php";
         <div id="form-a" hidden>
         <form id="trueform-a" method = "post" action="_reg_action.php" enctype="multipart/form-data">
             <fieldset>
+                <input name="isAllaskereso" value="yes" hidden>
                 <label for="felhasznalo">Felhasználónév:</label>
                 <input type="text" id="login" class="fadeIn second" name="login" tabindex="1" placeholder="Felhasználónév" required>
                 <br/>
