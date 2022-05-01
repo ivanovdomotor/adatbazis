@@ -17,7 +17,7 @@
         [2, "Programozó fejlődő céghez", "5440 Kunszentmárton, Egyutca 2.", 0, "remote",
             "Fiatalos csapatba keresünk senior, legalább 10 év gyakorlattal rendelkező fullstack programozókat",
             "Typescript, Angular, Postgres, Bootstrap",550000, "2022.09.11",1, "Kisstílű Kft.", "Rakomány Ervin", "06-20-432-2345", "aszfalt@szotyolade.com"]
-    ]
+    ];
     ?>
 
     <div class="card" style="width: 25rem;">

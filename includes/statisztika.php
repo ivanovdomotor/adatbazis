@@ -22,10 +22,8 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <th>Összes felhasználó:</th>
-                        <th>
-                            <?php include "_osszes_felhasznalo.php";?>
-                        </th>
+                        <th>Összes felhasználó:</th><th><?php include "_osszes_felhasznalo.php";?></th>
+
 
                     </tr>
                     </tbody>
