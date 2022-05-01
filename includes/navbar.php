@@ -10,19 +10,38 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hirdetések</a>
+                    <a id="main" class="nav-link active alert-primary" href="#">Hirdetések</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cégek</a>
+                    <a id="cegek" class="nav-link" href="#">Cégek</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Adatok</a>
+                    <a id="adatok" class="nav-link" href="#">Adatok</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Statisztika</a>
+                    <a id="statisztika" class="nav-link" href="#">Statisztika</a>
                 </li>
             </ul>
 
         </div>
     </div>
 </nav>
+
+<script>
+    function resetPages(){
+        document.getElementById("main").setAttribute("class","nav-link");
+        document.getElementById("cegek").setAttribute("class","nav-link");
+        document.getElementById("adatok").setAttribute("class","nav-link");
+        document.getElementById("statisztika").setAttribute("class","nav-link");
+    }
+
+    function whatPageIsIt(){
+        resetPages();
+        let words = window.location.href.split("/");
+        let word = words[words.length-1].split(".")[0];
+        document.getElementById(word).setAttribute("class","nav-link active alert-primary");
+    }
+
+    whatPageIsIt();
+
+</script>

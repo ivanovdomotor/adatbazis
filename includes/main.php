@@ -6,8 +6,6 @@
 
     <body>
     <?php include 'navbar.php'; ?>
-    <?php include 'hirdetesek.php'; ?>
-
     </body>
 </html>
 
