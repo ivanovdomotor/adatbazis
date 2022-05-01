@@ -6,7 +6,7 @@
 
     <body>
     <?php include 'navbar.php'; ?>
-
+    <br/>
     <?php
     //id, megnevezes, munkavegzeshelye, ido, munkarend, munkafeladatleiras, kotelvaras, opcelvaras, juttatasok, jelentkezesihatarido, status, cegnev,
     // allashirdetonev, allashirdetotelszam, allashirdetoemail
@@ -39,7 +39,7 @@
 
         echo"
         <div class='col'>
-        <div class='card' style='width: 18rem;'>
+        <div class='card' style='width: 33%;'>
           <div class='card-body'>
             <img src='../ceglogos/{$cegek[$i]["CEGKEP"]}' class='card-img-top'>
             <h5 class='card-title'>{$cegek[$i]["MEGNEVEZES"]}</h5>
