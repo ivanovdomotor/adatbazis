@@ -35,10 +35,10 @@ if(!isset($_POST["login"]) ||
 
 
         $target_dir = "../profilepics/";
-        $fenykep_ut = $felhasznalo_id . "_pfpic_" . $_POST["login"];
+        $imageFileType = strtolower(pathinfo(basename($_FILES["kep"]["name"]),PATHINFO_EXTENSION));
+        $fenykep_ut = $felhasznalo_id . "_pfpic_" . $_POST["login"]. ".{$imageFileType}";
         $target_file = $target_dir . $fenykep_ut;
         $uploadOk = 1;
-        $imageFileType = strtolower(pathinfo(basename($_FILES["kep"]["name"]),PATHINFO_EXTENSION));
 
         if ($_FILES["kep"]["size"] > 500000) {
             echo "
@@ -70,7 +70,7 @@ if(!isset($_POST["login"]) ||
                 }else{
                     $allaskereso_id = 1;
                 }
-                $allashirdeto_id = null;
+                $allashirdeto_id = 0;
 
 
 
@@ -84,14 +84,15 @@ if(!isset($_POST["login"]) ||
                     $allashirdeto_id = 1;
                 }
 
-                $allaskereso_id = null;
+                $allaskereso_id = 0;
 
             }
 
             $sql_text = "INSERT INTO FELHASZNALO(
                         ID, 
                         FELHASZNALONEV, 
-                        JELSZO, STATUS, 
+                        JELSZO, 
+                        STATUS, 
                         IS_ADMIN, 
                         ALLASKERESO_ID, 
                         ALLASHIRDETO_ID)
@@ -145,12 +146,13 @@ if(!isset($_POST["login"]) ||
            '{$_POST["vezeteknev"]}',
            '{$_POST["keresztnev"]}',
            '{$fenykep_ut}',
-           {$_POST["szulido"]},
+           TO_DATE('{$_POST["birthday"]}', 'YYYY-MM-DD'),
            '{$_POST["lakcim"]}',
            '{$_POST["tarthely"]}',
            50,
            {$oneletrajz_id}, 
-           '',
+           'Még nincs leírás...',
+           '-',
            '{$_POST["telszam"]}',
            '{$_POST["email"]}')";
 
