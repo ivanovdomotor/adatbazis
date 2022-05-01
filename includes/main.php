@@ -40,7 +40,6 @@
             <li class="list-group-item">Telefonszám: 06-70-123-4567</li>
             <li class="list-group-item">Email-cím: minta@minta.hu</li>
 
-
         </ul>
         <div class="card-body">
             <a href="#" class="jelentkezes">Jelentkezés elküldése</a>
