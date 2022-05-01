@@ -29,17 +29,17 @@
         ";
         }
 
-        echo'
-        <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">KÁRTYA</h5>
-            <p class="card-text">CONTENT</p>
-            <a href="#" class="btn btn-primary">JELENTKEZÉS</a>
+        echo"
+        <div class='col'>
+        <div class='card'>
+          <div class='card-body'>
+            <h5 class='card-title'>{$pelda[$i][1]}</h5>
+            <p class='card-text'>{$pelda[$i][5]}</p>
+            <a href='#' class='btn btn-primary'>Jelentkezés</a>
             </div>
         </div>
       </div>
-        ';
+        ";
 
 
 
