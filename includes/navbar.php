@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-expand navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand navbar-dark bg-secondary" style="background-color: #e3f2fd;">
     <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">
             <img src="../icons/briefcase-fill.svg" >
@@ -25,6 +25,9 @@
                 <li class="nav-item">
                     <a id="statisztika" class="nav-link" href="statisztika.php">Statisztika</a>
                 </li>
+                <li class="nav-item bg-danger">
+                    <a id="logout" class="nav-link" href="logout.php">Kijelentkezés</a>
+                </li>
             </ul>
 
         </div>
@@ -43,7 +46,7 @@
         resetPages();
         let words = window.location.href.split("/");
         let word = words[words.length-1].split(".")[0];
-        document.getElementById(word).setAttribute("class","nav-link active alert-primary");
+        document.getElementById(word).setAttribute("class","nav-link active bg-dark");
     }
 
     whatPageIsIt();
