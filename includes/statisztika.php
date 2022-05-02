@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
     <head>
         <link href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
