@@ -38,7 +38,7 @@ session_start();
             <img height='14' class='' src='../profilepics/{$cegek[$i]["ALLASHIRDETOKEP"]}' style='border-radius: 50%;' >
             <small class='text-muted'>{$cegek[$i]["TITULUS"]} {$cegek[$i]["VEZETEKNEV"]} {$cegek[$i]["KERESZTNEV"]}</small>
             </br>
-            <small class='text-muted'>tel: {$cegek[$i]["TELEFONSZAM"]}</br> <a>email: {$cegek[$i]["EMAIL"]}</a></small>
+            <small class='text-muted'>tel: {$cegek[$i]["TELEFONSZAM"]}</br> email: <a href='mailto:{$cegek[$i]["EMAIL"]}'>{$cegek[$i]["EMAIL"]}</a></small>
             </p>
             
             <a href='#' class='btn btn-primary'>Jelentkezés</a>
