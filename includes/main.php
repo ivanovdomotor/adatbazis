@@ -1,5 +1,9 @@
 <?php
 session_start();
+if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["isAllashirdeto"] != 1){
+    header("Location: login.php");
+    exit;
+}
 ?>
 <html>
     <head>
