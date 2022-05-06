@@ -224,10 +224,10 @@ Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZUL
 REM INSERTING into IVANOV.CEG
 SET DEFINE OFF;
 Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('1','McDonalds','1_ceg.jpg','A Mcdonalds egy hamburgereket forgalmaz? nemzetk?zi gyors?ttereml?nc.','06-70-123-4567','mc@donal.ds');
-Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('2','Nike',null,'A Nike, Inc. vagy röviden Nike a világ elsõ számú edzõcipõ-, sportruházat- és sportszergyártója.','06-30-578-3244','nike@citromail.hu');
-Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('3','Facebook',null,'A Facebook amerikai alapítású közösségi hálózat, amely 2004. február 4-én kezdte meg mûködését.','06-20-948-3243','alien@mars.com');
-Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('4','SZTE',null,'A Szegedi Tudományegyetem (röviden: SZTE) – Universitas Scientiarum Szegediensis / University of Szeged – Magyarországon, Szeged városában mûködõ,  alapítvány által fenntartott felsõoktatási intézmény.','06-70-827-9125','szte@szte.hu');
-Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('5','Google',null,'A Google LLC amerikai, tõzsdén bejegyzett részvénytársaság, amit eredetileg zártkörûen mûködõ társaságként alapítottak 1998-ban, és aminek a nevéhez fûzõdik a Google keresõmotor kifejlesztése és üzemeltetése.','06-30-265-1958','google@yahoo.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('2','Nike','2_ceg.png','A Nike, Inc. vagy röviden Nike a világ elsõ számú edzõcipõ-, sportruházat- és sportszergyártója.','06-30-578-3244','nike@citromail.hu');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('3','Facebook','3_ceg.png','A Facebook amerikai alapítású közösségi hálózat, amely 2004. február 4-én kezdte meg mûködését.','06-20-948-3243','alien@mars.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('4','SZTE','4_ceg.png','A Szegedi Tudományegyetem (röviden: SZTE) – Universitas Scientiarum Szegediensis / University of Szeged – Magyarországon, Szeged városában mûködõ,  alapítvány által fenntartott felsõoktatási intézmény.','06-70-827-9125','szte@szte.hu');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('5','Google','5_ceg.png','A Google LLC amerikai, tõzsdén bejegyzett részvénytársaság, amit eredetileg zártkörûen mûködõ társaságként alapítottak 1998-ban, és aminek a nevéhez fûzõdik a Google keresõmotor kifejlesztése és üzemeltetése.','06-30-265-1958','google@yahoo.com');
 REM INSERTING into IVANOV.FELHASZNALO
 SET DEFINE OFF;
 Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('1','ivanov','ivanov','1','1',null,null);
