@@ -40,6 +40,7 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
             <p class='card-text'>{$cegek[$i]["MUNKAFELADATLEIRAS"]}</p>
             <p class='card-text'>
             <img height='14' class='' src='../profilepics/{$cegek[$i]["ALLASHIRDETOKEP"]}' style='border-radius: 50%;' >
+            <br>
             <small class='text-muted'>{$cegek[$i]["TITULUS"]} {$cegek[$i]["VEZETEKNEV"]} {$cegek[$i]["KERESZTNEV"]}</small>
             </br>
             <small class='text-muted'>tel: {$cegek[$i]["TELEFONSZAM"]}</br> email: <a href='mailto:{$cegek[$i]["EMAIL"]}'>{$cegek[$i]["EMAIL"]}</a></small>
