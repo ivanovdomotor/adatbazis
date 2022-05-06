@@ -46,13 +46,17 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
             <small class='text-muted'>tel: {$cegek[$i]["TELEFONSZAM"]}</br> email: <a href='mailto:{$cegek[$i]["EMAIL"]}'>{$cegek[$i]["EMAIL"]}</a></small>
             </p>
             
-            <button action = 'inaktivalas.php' class='btn btn-primary'>Jelentkezés</a>
+            <button class='btn btn-primary'>Jelentkezés</button>
             
             ";
 
         if($_SESSION["isAdmin"] == 1){
             echo "
-            <a href='#' class='btn btn-warning'>Inaktiválás</a>
+            <form id ='{$cegek[$i]["ID"]}' action='inaktivalas.php' method='post'>
+                <input name='id' value='{$cegek[$i]["ID"]}' hidden>
+                <a class='btn btn-warning' onclick='inactive({$cegek[$i]["ID"]})'>Inaktiválás</a>
+            </form>
+            
             ";
         }
         echo"
@@ -83,3 +87,9 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
 </html>
 
 
+<script>
+    function inactive(x){
+        document.getElementById(x).submit();
+    }
+
+</script>
