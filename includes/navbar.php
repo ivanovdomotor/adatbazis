@@ -8,7 +8,7 @@
         <span class="navbar-brand mb-0 h1"><?php
             if($_SESSION["isAdmin"] == 1){echo "Admin";}
             elseif ($_SESSION['isAllashirdeto'] == true){echo "Álláshirdető";}
-            else{echo "Álláshirdető";}
+            elseif ($_SESSION['isAllaskereso'] == true){echo "Álláskereső";}
             ?></span>
         <div class="collapse navbar-collapse" id="navbarNav">
 

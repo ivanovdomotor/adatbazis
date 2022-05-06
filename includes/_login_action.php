@@ -25,19 +25,15 @@ if(isset($mymap[0])){
         $_SESSION['jelszo'] = $mymap[0]["JELSZO"];
         $_SESSION['isAdmin'] = $mymap[0]["IS_ADMIN"];
         if( $_SESSION['isAdmin'] == 0){
-            if($mymap[0]["ALLASHIRDETO_ID"] == null && $mymap[0]["ALLASHIRDETO_ID"] == 0){
+            if($mymap[0]["ALLASHIRDETO_ID"] == null || $mymap[0]["ALLASHIRDETO_ID"] == 0){
                 $_SESSION['isAllashirdeto'] = false;
+                $_SESSION['isAllaskereso'] = true;
             }else{
                 $_SESSION['isAllashirdeto'] = true;
-            }
-        }
-        if( $_SESSION['isAdmin'] == 0){
-            if($mymap[0]["ALLASKERESO_ID"] == null && $mymap[0]["ALLASKERESO_ID"] == 0){
                 $_SESSION['isAllaskereso'] = false;
-            }else{
-                $_SESSION['isAllaskereso'] = true;
             }
         }
+
 
 
 
