@@ -26,8 +26,9 @@ session_start();
                     </thead>
                     <tbody>
                     <tr><th>Összes felhasználó (adminok kivételével):</th><th><?php include "_osszes_felhasznalo.php";?></th></tr>
-                    <tr><td>Ebből álláskereső:</td><td><?php echo "???" ?></td></tr>
-                    <tr><td>Ebből álláshirdető:</td><td><?php echo "???" ?></td></tr>
+                    <tr><th>Összes álláskereső:</th><th><?php include "_osszes_allaskereso.php";?></th></tr>
+                    <tr><th>Összes álláshirdető:</th><th><?php include "_osszes_allashirdeto.php";?></th></tr>
+
                     <tr><th>Összes önéletrajz:</th><th><?php echo "???" ?></th></tr>
                     </tbody>
 
