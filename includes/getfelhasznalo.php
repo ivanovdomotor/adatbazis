@@ -23,7 +23,8 @@ if($_SESSION['isAdmin'] == 1){
     ALLASKERESO.EGYEB_INFO,
     ALLASKERESO.TELEFONSZAM,
     ALLASKERESO.EMAIL
-    FROM ALLASKERESO";
+    FROM ALLASKERESO
+    WHERE ID = {$_SESSION['AllaskeresoID']}";
 
 }else{
 
@@ -33,7 +34,8 @@ if($_SESSION['isAdmin'] == 1){
     ALLASHIRDETO.KERESZTNEV,
     ALLASHIRDETO.TELEFONSZAM,
     ALLASHIRDETO.EMAIL
-    FROM ALLASHIRDETO";
+    FROM ALLASHIRDETO
+    WHERE ID = {$_SESSION['AllashirdetoID']}";
 }
 
 include 'oci_select.php';

@@ -24,14 +24,13 @@ if(!isset($felh)){exit();}
 <div class='col-3'></div>
 <div class='col-6'>
 <h1>Saját adatok módosítása</h1>
-<h5>Admin</h5>
-<form>";
+<form method='post' action='modosit.php'>";
 
 
 foreach($felh as $key=>$value){
     echo"
 
-    <div class='input-group'>
+    <div class='mb-3 input-group'>
         <span class='input-group-text'>{$key}</span>
         <textarea class='form-control' name='{$key}' type='text' id='{$key}'>{$value}</textarea>
     </div>
@@ -43,7 +42,10 @@ foreach($felh as $key=>$value){
     <label for='felhnev'>Jelszó</label>
     <input type='text' value='{$felh['JELSZO']}' id='felhnev'>*/
     
-echo"</form>
+echo"
+
+<input class='btn btn-primary' type='submit' value='Módosítás'>
+</form>
 
 </div>
 <div class='col-3'></div>

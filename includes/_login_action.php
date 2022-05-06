@@ -28,6 +28,7 @@ if(isset($mymap[0])){
             if($mymap[0]["ALLASHIRDETO_ID"] == null || $mymap[0]["ALLASHIRDETO_ID"] == 0){
                 $_SESSION['isAllashirdeto'] = false;
                 $_SESSION['isAllaskereso'] = true;
+                $_SESSION['AllaskeresoID'] = $mymap[0]["ALLASKERESO_ID"];
             }else{
                 $_SESSION['isAllashirdeto'] = true;
                 $_SESSION['AllashirdetoID'] = $mymap[0]["ALLASHIRDETO_ID"];
