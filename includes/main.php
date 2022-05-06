@@ -46,7 +46,7 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
             <small class='text-muted'>tel: {$cegek[$i]["TELEFONSZAM"]}</br> email: <a href='mailto:{$cegek[$i]["EMAIL"]}'>{$cegek[$i]["EMAIL"]}</a></small>
             </p>
             
-            <a href='#' class='btn btn-primary'>Jelentkezés</a>
+            <button action = 'inaktivalas.php' class='btn btn-primary'>Jelentkezés</a>
             
             ";
 
