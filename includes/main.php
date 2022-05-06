@@ -33,7 +33,7 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
 
         echo"
         <div class='col'>
-        <div class='card' style='width: 33%;'>
+        <div class='card' style='width: 100%;'>
           <div class='card-body'>
             <img src='../ceglogos/{$cegek[$i]["CEGKEP"]}' class='card-img-top'>
             <h5 class='card-title'>{$cegek[$i]["MEGNEVEZES"]}</h5>
