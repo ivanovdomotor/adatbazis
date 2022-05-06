@@ -25,11 +25,12 @@ session_start();
                     </tr>
                     </thead>
                     <tbody>
-                    <tr><th>Összes felhasználó (adminok kivételével):</th><th><?php include "_osszes_felhasznalo.php";?></th></tr>
-                    <tr><th>Összes álláskereső:</th><th><?php include "_osszes_allaskereso.php";?></th></tr>
-                    <tr><th>Összes álláshirdető:</th><th><?php include "_osszes_allashirdeto.php";?></th></tr>
+                    <tr><th>Felhasználók száma (adminok kivételével):</th><th><?php include "_osszes_felhasznalo.php";?></th></tr>
+                    <tr><th>Álláskeresők száma:</th><th><?php include "_osszes_allaskereso.php";?></th></tr>
+                    <tr><th>Álláshirdetők száma:</th><th><?php include "_osszes_allashirdeto.php";?></th></tr>
+                    <tr><th>Önéletrajzok száma:</th><th><?php include "_osszes_oneletrajz.php";?></th></tr>
 
-                    <tr><th>Összes önéletrajz:</th><th><?php echo "???" ?></th></tr>
+
                     </tbody>
 
 
