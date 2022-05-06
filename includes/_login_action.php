@@ -7,7 +7,7 @@ if(!isset($_POST["login"]) || !isset($_POST["password"])){
     header("Location: {$_SESSION["page"]} ");
     exit();
 }
-$sql_text = "SELECT JELSZO, STATUS, IS_ADMIN, ALLASHIRDETO_ID, ALLASKERESO_ID FROM FELHASZNALO WHERE FELHASZNALONEV = '{$_POST["login"]}'";
+$sql_text = "SELECT ID, JELSZO, STATUS, IS_ADMIN, ALLASHIRDETO_ID, ALLASKERESO_ID FROM FELHASZNALO WHERE FELHASZNALONEV = '{$_POST["login"]}'";
 
 include 'oci_select.php';
 if(isset($mymap[0])){
@@ -21,7 +21,7 @@ if(isset($mymap[0])){
             </form>";
         }
 
-        $_SESSION['felhasznalo_id'] =
+        $_SESSION['felhasznalo_id'] = $mymap[0]["ID"];
         $_SESSION['jelszo'] = $mymap[0]["JELSZO"];
         $_SESSION['isAdmin'] = $mymap[0]["IS_ADMIN"];
         if( $_SESSION['isAdmin'] == 0){
@@ -30,11 +30,10 @@ if(isset($mymap[0])){
                 $_SESSION['isAllaskereso'] = true;
             }else{
                 $_SESSION['isAllashirdeto'] = true;
+                $_SESSION['AllashirdetoID'] = $mymap[0]["ALLASHIRDETO_ID"];
                 $_SESSION['isAllaskereso'] = false;
             }
         }
-
-
 
 
         echo "

@@ -23,6 +23,7 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
 
 
 
+
     echo"
         </br>
         <div class='container'>
@@ -59,8 +60,8 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
                 <textarea class='form-control' name='munkavegzeshelye' type='text' id='munkavegzeshelye' ></textarea>
             </div>
             <div class='form-check form-switch'>
-              <input class='form-check-input' type='checkbox' role='switch' id='flexSwitchCheckChecked' checked>
-              <label class='form-check-label' for='flexSwitchCheckChecked'>Határozatlan időre</label>
+              <input class='form-check-input' type='checkbox' role='switch' id='switch' name='ido' checked>
+              <label class='form-check-label' for='switch'>Határozatlan időre</label>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Munkarend fajtája</span>
@@ -88,10 +89,26 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
             </div>
             <input type='submit' class='btn btn-primary' value='Létrehozás'>
             
-        </form>
+        </form>";
+
+    if(isset($_POST["tul_nagy_kep"])){
+        echo "
+            <div class='alert alert-danger' role='alert'>
+            A feltölteni kívánt kép túl nagy!
+            </div>
+            ";
+    }
+
+    if(isset($_POST["nem_jo_format"])){
+        echo "
+            <div class='alert alert-danger' role='alert'>
+            A feltölteni kívánt kép nem JPG, PNG, vagy JPEG formátumú!
+            </div>
+            ";
+    }
         
-        <h2>Új cég létrehozása</h2>
-        <form id='uj_ceg' action='uj_ceg.php' method='post'>
+        echo "<h2>Új cég létrehozása</h2>
+        <form id='uj_ceg' action='uj_ceg.php' method='post' enctype='multipart/form-data'>
          <div class='input-group'>
                 <span class='input-group-text'>Cég neve:</span>
                 <textarea class='form-control' name='nev' type='text' id='nev' ></textarea>

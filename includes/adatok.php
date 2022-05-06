@@ -15,45 +15,41 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
 <br/>
 <?php
 include "getfelhasznalo.php";
-$felhasznalo = [];
-if(isset($mymap)){
-    $felhasznalo = $mymap;
-}
+if(!isset($felh)){exit();}
+
+    echo "
+</br>
+<div class='container'>
+<div class='row'>
+<div class='col-3'></div>
+<div class='col-6'>
+<h1>Saját adatok módosítása</h1>
+<h5>Admin</h5>
+<form>";
 
 
-$i = 0;
-
-echo "
-<h3>Te .... felhasználó vagy. Az adataid: </h3>
-<br>
-
-";
-
-
-echo"
-<h3>Az adatbázisban szereplő egyéb felhasználók:</h3>
-";
-
-foreach($felhasznalo as $row){
-    if ($felhasznalo[$i]["IS_ADMIN"] == 1){
-      $adminstatus = "egy admin";
-    } else {
-        $adminstatus = "egy felhasznalo";
-            }
-
+foreach($felh as $key=>$value){
     echo"
-        <div class='felhasznalok'>
-            <h5>{$felhasznalo[$i]["FELHASZNALONEV"]} $adminstatus</h5>
 
-      </div>
-        ";
-
-
-    $i++;
-}
-echo "
+    <div class='input-group'>
+        <span class='input-group-text'>{$key}</span>
+        <textarea class='form-control' name='{$key}' type='text' id='{$key}'>{$value}</textarea>
     </div>
     ";
+}
+
+    /*<label for='felhnev'>Felhasználónév</label>
+    <input type='text' value='{$felh['FELHASZNALONEV']}' id='felhnev'>
+    <label for='felhnev'>Jelszó</label>
+    <input type='text' value='{$felh['JELSZO']}' id='felhnev'>*/
+    
+echo"</form>
+
+</div>
+<div class='col-3'></div>
+</div>
+</div>";
+
 
 
 ?>
