@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 
 <html>
@@ -44,20 +45,16 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
         }
     }
 
-    /*<option value=''>One</option>
-      <option value=''>Two</option>
-      <option value=''>Three</option>*/
-//  munkarend, o jutatatasok, jelentkezsihatarido,
         echo"
             </select>
             
             <div class='input-group'>
                 <span class='input-group-text'>Megnevezés</span>
-                <textarea class='form-control' name='megnevezes' type='text' id='megnevezes' ></textarea>
+                <textarea class='form-control' name='megnevezes' type='text' id='megnevezes' maxlength='50' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Munkavégzés helye</span>
-                <textarea class='form-control' name='munkavegzeshelye' type='text' id='munkavegzeshelye' ></textarea>
+                <textarea class='form-control' name='munkavegzeshelye' type='text' id='munkavegzeshelye' maxlength='50' ></textarea>
             </div>
             <div class='form-check form-switch'>
               <input class='form-check-input' type='checkbox' role='switch' id='switch' name='ido' checked>
@@ -65,27 +62,27 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Munkarend fajtája</span>
-                <textarea class='form-control' name='munkarend type='text' id='munkarend' ></textarea>
+                <textarea class='form-control' name='munkarend' type='text' id='munkarend' maxlength='50' maxlength='20' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Munkafeladat leírás</span>
-                <textarea class='form-control' name='munkafeladatleiras' type='text' id='munkafeladatleiras' ></textarea>
+                <textarea class='form-control' name='munkafeladatleiras' type='text' id='munkafeladatleiras' maxlength='200' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Kötelező elvárások</span>
-                <textarea class='form-control' name='kotelvaras' type='text' id='kotelvaras' ></textarea>
+                <textarea class='form-control' name='kotelvaras' type='text' id='kotelvaras' maxlength='100' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Opcionális elvárások</span>
-                <textarea class='form-control' name='opcelvaras' type='text' id='opcelvaras' ></textarea>
+                <textarea class='form-control' name='opcelvaras' type='text' id='opcelvaras' maxlength='100' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Juttatások</span>
-                <textarea class='form-control' name='juttatasok' type='text' id='juttatasok' ></textarea>
+                <textarea class='form-control' name='juttatasok' type='text' id='juttatasok' maxlength='100' ></textarea>
             </div>
             <div>
                 <label for='jelentkezesi'>Jelentkezési határidő:</label>
-                <input class='form-control' type='date' id='jelentkezesi' name='jelentkezesi'>
+                <input class='form-control' type='date' id='jelentkezesi' name='jelentkezesi' >
             </div>
             <input type='submit' class='btn btn-primary' value='Létrehozás'>
             
@@ -111,11 +108,28 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
         <form id='uj_ceg' action='uj_ceg.php' method='post' enctype='multipart/form-data'>
          <div class='input-group'>
                 <span class='input-group-text'>Cég neve:</span>
-                <textarea class='form-control' name='nev' type='text' id='nev' ></textarea>
+                <textarea class='form-control' name='nev' type='text' id='nev' maxlength='50' ></textarea>
           </div>
-          
-        
-        
+          <div>
+          <div class='input-group'>
+                <span class='input-group-text'>Cég logója:</span>
+                <input class='form-control' type='file' id='kep' name='kep' accept='image/*' maxlength='200'>
+          </div>
+            
+          </div>
+          <div class='input-group'>
+                <span class='input-group-text'>Rövid leírás</span>
+                <textarea class='form-control' name='rovidleiras' type='text' id='rovidleiras' maxlength='250' ></textarea>
+            </div>
+          <div>
+        <label for='telszam'>Telefonszám:</label>
+                <input class='form-control' required type='tel' id='telszam' name='telszam' maxlength='14' pattern='[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}'>
+             </div>
+             <div>
+              <label required for='email'>E-mail cím:</label>
+                <input class='form-control' required type='email' id='email-b' name='email' tabindex='9' maxlength='50' />
+                </div>
+          <input type='submit' class='btn btn-primary' value='Létrehozás'>
         </form>
         
         
