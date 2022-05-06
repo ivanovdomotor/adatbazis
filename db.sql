@@ -213,7 +213,7 @@ Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('4',to_date('21
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('5',to_date('18-MÁJ.  -19','RR-MON-DD'),'Ez az ötödik adminmegjegyzés az oldalon.');
 REM INSERTING into IVANOV.ALLASHIRDETO
 SET DEFINE OFF;
-Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('1',null,'Slendri?n','?d?n','4_pfpic.jpg','06-70-987-9876','slendrian70@gmail.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('1',null,'Slendrion','Endre','4_pfpic.jpg','06-70-987-9876','slendrian70@gmail.com');
 Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('2',null,'Álláshirdetõ','Béla',null,'06-20-373-2393','allashirdeto.bela@gmail.com');
 Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('3',null,'Tordai','István',null,'06-50-276-2354','tordai.allas@citromail.hu');
 Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('4','Dr.','Herczeg','József',null,'06-20-658-9942','hercegmunka@freemail.hu');
