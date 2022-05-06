@@ -23,19 +23,28 @@ if(isset($mymap)){
 
 $i = 0;
 
+echo "
+<h3>Te .... felhasználó vagy. Az adataid: </h3>
+<br>
+
+";
+
+
 echo"
-<h5>Az adatbázisban szereplő felhasználók:</h5>
+<h3>Az adatbázisban szereplő egyéb felhasználók:</h3>
 ";
 
 foreach($felhasznalo as $row){
+    if ($felhasznalo[$i]["IS_ADMIN"] == 1){
+      $adminstatus = "egy admin";
+    } else {
+        $adminstatus = "egy felhasznalo";
+            }
+
     echo"
         <div class='felhasznalok'>
-            <h5>{$felhasznalo[$i]["FELHASZNALONEV"]}</h5>
-            <?php if({$felhasznalo[$i]["IS_ADMIN"]} == 1) : ?>
-                <h5> admin</h5>
-            <?php else : ?>
-                <h5> felhasználó</h5>
-            <?php endif; ?>
+            <h5>{$felhasznalo[$i]["FELHASZNALONEV"]} $adminstatus</h5>
+
       </div>
         ";
 
@@ -45,6 +54,7 @@ foreach($felhasznalo as $row){
 echo "
     </div>
     ";
+
 
 ?>
 
