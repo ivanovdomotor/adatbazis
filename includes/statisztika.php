@@ -16,7 +16,7 @@ session_start();
             </div>
             <div class="col-10">
 
-                <table class="table table-warning table-striped table-hover">
+                <table class="table table-light table-striped table-hover">
                     <thead>
                     <tr>
                         <th class="text-center" colspan="2">
@@ -29,6 +29,7 @@ session_start();
                     <tr><th>Álláskeresők száma:</th><th><?php include "_osszes_allaskereso.php";?></th></tr>
                     <tr><th>Álláshirdetők száma:</th><th><?php include "_osszes_allashirdeto.php";?></th></tr>
                     <tr><th>Önéletrajzok száma:</th><th><?php include "_osszes_oneletrajz.php";?></th></tr>
+                    <tr><th>Pontos vagy bátor softskillt tartalmazó önéletrajzok:</th><th><?php include "softskillcv.php";?></th></tr>
 
 
                     </tbody>

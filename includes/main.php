@@ -46,9 +46,9 @@ foreach($cegek as $row){
             <small class='text-muted'>tel: {$cegek[$i]["TELEFONSZAM"]}</br> email: <a href='mailto:{$cegek[$i]["EMAIL"]}'>{$cegek[$i]["EMAIL"]}</a></small>
             </p>
             
-            <button class='btn btn-primary'>Jelentkezés</button>
-            
             ";
+
+
 
     if($_SESSION["isAdmin"] == 1){
         echo "
@@ -58,7 +58,14 @@ foreach($cegek as $row){
             </form>
             
             ";
+    }elseif($_SESSION["isAllashirdeto"] != 1){
+        echo "
+                <a class='btn btn-primary' href='mailto:{$cegek[$i]["EMAIL"]}'>Jelentkezés</a>
+            
+            ";
     }
+
+
     echo"
           </div>
         </div>

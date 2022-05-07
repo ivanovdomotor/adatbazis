@@ -10,4 +10,5 @@ if (isset($mymap[0])) {
 }
 
 echo $allashirdetok_szama;
+include "oci_conn_stop.php";
 ?>

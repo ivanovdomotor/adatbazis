@@ -10,4 +10,5 @@ $felhasznalok_szama = $mymap[0]["COUNT(*)"];
 }
 
 echo $felhasznalok_szama;
+include "oci_conn_stop.php";
 ?>

@@ -12,7 +12,21 @@ session_start();
 <?php include 'navbar.php';
 
 if( !isset($_SESSION["isAllashirdeto"]) || $_SESSION["isAllashirdeto"] != 1){
-    echo"Cégek hozzáadása csak álláshirdetők számára lehetséges!";
+    echo"
+    <br><br>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-3'></div>
+            <div class='col-6'>
+                <div class='alert alert-danger' role='alert'>
+                Cégek hozzáadása csak álláshirdetőknek engedélyezett!
+                </div>
+            </div>
+            <div class='col-3'></div>
+        </div>
+    </div>
+    
+    ";
 }
 
 if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
