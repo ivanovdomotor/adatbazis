@@ -6,32 +6,32 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
 }
 ?>
 <html>
-    <head>
-        <link href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    </head>
+<head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
 
-    <body>
-    <?php include 'navbar.php'; ?>
-    <br/>
-    <?php
-    include "gethirdetesek.php";
-    $cegek = [];
-    if(isset($mymap)){
-        $cegek = $mymap;
-    }
+<body>
+<?php include 'navbar.php'; ?>
+<br/>
+<?php
+include "gethirdetesek.php";
+$cegek = [];
+if(isset($mymap)){
+    $cegek = $mymap;
+}
 
-    echo "
+echo "
     <div class='container'>
     ";
-    $i = 0;
-    foreach($cegek as $row){
-        if($i % 3 == 0){
-            echo"
+$i = 0;
+foreach($cegek as $row){
+    if($i % 3 == 0){
+        echo"
         <div class='row'>
         ";
-        }
+    }
 
-        echo"
+    echo"
         <div class='col'>
         <div class='card' style='width: 100%;'>
           <div class='card-body'>
@@ -50,16 +50,16 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
             
             ";
 
-        if($_SESSION["isAdmin"] == 1){
-            echo "
+    if($_SESSION["isAdmin"] == 1){
+        echo "
             <form id ='{$cegek[$i]["ID"]}' action='inaktivalas.php' method='post'>
                 <input name='id' value='{$cegek[$i]["ID"]}' hidden>
                 <a class='btn btn-warning' onclick='inactive({$cegek[$i]["ID"]})'>Inaktiválás</a>
             </form>
             
             ";
-        }
-        echo"
+    }
+    echo"
           </div>
         </div>
       </div>
@@ -67,23 +67,23 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
 
 
 
-        if($i % 3 == 2){
-            echo"
+    if($i % 3 == 2){
+        echo"
         </div>
         ";
-        }
-        $i++;
     }
-    echo "
+    $i++;
+}
+echo "
     </div>
     ";
 
-    ?>
+?>
 
 
 
 
-    </body>
+</body>
 </html>
 
 

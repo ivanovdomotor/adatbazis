@@ -45,7 +45,7 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
         }
     }
 
-        echo"
+    echo"
             </select>
             
             <div class='input-group'>
@@ -103,8 +103,8 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
             </div>
             ";
     }
-        
-        echo "<h2>Új cég létrehozása</h2>
+
+    echo "<h2>Új cég létrehozása</h2>
         <form id='uj_ceg' action='uj_ceg.php' method='post' enctype='multipart/form-data'>
          <div class='input-group'>
                 <span class='input-group-text'>Cég neve:</span>
