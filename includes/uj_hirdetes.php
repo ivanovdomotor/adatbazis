@@ -60,5 +60,5 @@ if(isset($conn)){
 
 include 'oci_conn_stop.php';
 
-header("Location:cegek.php");
+//header("Location:cegek.php");
 ?>

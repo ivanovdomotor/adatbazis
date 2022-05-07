@@ -5,8 +5,7 @@ include "oci_conn_start.php";
 if($_SESSION['isAdmin'] == 1){
 
     $sql_text = "SELECT
-    FELHASZNALO.FELHASZNALONEV,
-    FELHASZNALO.JELSZO
+    FELHASZNALO.FELHASZNALONEV
     FROM FELHASZNALO
     WHERE ID = {$_SESSION['felhasznalo_id']}";
 

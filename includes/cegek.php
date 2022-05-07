@@ -50,11 +50,11 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
             
             <div class='input-group'>
                 <span class='input-group-text'>Megnevezés</span>
-                <textarea class='form-control' name='megnevezes' type='text' id='megnevezes' maxlength='50' ></textarea>
+                <textarea class='form-control' name='megnevezes' type='text' id='megnevezes' maxlength='30' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Munkavégzés helye</span>
-                <textarea class='form-control' name='munkavegzeshelye' type='text' id='munkavegzeshelye' maxlength='50' ></textarea>
+                <textarea class='form-control' name='munkavegzeshelye' type='text' id='munkavegzeshelye' maxlength='30' ></textarea>
             </div>
             <div class='form-check form-switch'>
               <input class='form-check-input' type='checkbox' role='switch' id='switch' name='ido' checked>
@@ -62,23 +62,23 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Munkarend fajtája</span>
-                <textarea class='form-control' name='munkarend' type='text' id='munkarend' maxlength='50' maxlength='20' ></textarea>
+                <textarea class='form-control' name='munkarend' type='text' id='munkarend' maxlength='10' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Munkafeladat leírás</span>
-                <textarea class='form-control' name='munkafeladatleiras' type='text' id='munkafeladatleiras' maxlength='200' ></textarea>
+                <textarea class='form-control' name='munkafeladatleiras' type='text' id='munkafeladatleiras' maxlength='100' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Kötelező elvárások</span>
-                <textarea class='form-control' name='kotelvaras' type='text' id='kotelvaras' maxlength='100' ></textarea>
+                <textarea class='form-control' name='kotelvaras' type='text' id='kotelvaras' maxlength='50' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Opcionális elvárások</span>
-                <textarea class='form-control' name='opcelvaras' type='text' id='opcelvaras' maxlength='100' ></textarea>
+                <textarea class='form-control' name='opcelvaras' type='text' id='opcelvaras' maxlength='50' ></textarea>
             </div>
             <div class='input-group'>
                 <span class='input-group-text'>Juttatások</span>
-                <textarea class='form-control' name='juttatasok' type='text' id='juttatasok' maxlength='100' ></textarea>
+                <textarea class='form-control' name='juttatasok' type='text' id='juttatasok' maxlength='50' ></textarea>
             </div>
             <div>
                 <label for='jelentkezesi'>Jelentkezési határidő:</label>
@@ -108,18 +108,18 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
         <form id='uj_ceg' action='uj_ceg.php' method='post' enctype='multipart/form-data'>
          <div class='input-group'>
                 <span class='input-group-text'>Cég neve:</span>
-                <textarea class='form-control' name='nev' type='text' id='nev' maxlength='50' ></textarea>
+                <textarea class='form-control' name='nev' type='text' id='nev' maxlength='30' ></textarea>
           </div>
           <div>
           <div class='input-group'>
                 <span class='input-group-text'>Cég logója:</span>
-                <input class='form-control' type='file' id='kep' name='kep' accept='image/*' maxlength='200'>
+                <input class='form-control' type='file' id='kep' name='kep' accept='image/*' maxlength='100'>
           </div>
             
           </div>
           <div class='input-group'>
                 <span class='input-group-text'>Rövid leírás</span>
-                <textarea class='form-control' name='rovidleiras' type='text' id='rovidleiras' maxlength='250' ></textarea>
+                <textarea class='form-control' name='rovidleiras' type='text' id='rovidleiras' maxlength='120' ></textarea>
             </div>
           <div>
         <label for='telszam'>Telefonszám:</label>
@@ -127,7 +127,7 @@ if( isset($_SESSION["isAllashirdeto"]) && $_SESSION["isAllashirdeto"] == 1){
              </div>
              <div>
               <label required for='email'>E-mail cím:</label>
-                <input class='form-control' required type='email' id='email-b' name='email' tabindex='9' maxlength='50' />
+                <input class='form-control' required type='email' id='email-b' name='email' tabindex='9' maxlength='20' />
                 </div>
           <input type='submit' class='btn btn-primary' value='Létrehozás'>
         </form>

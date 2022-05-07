@@ -24,7 +24,7 @@ if(!isset($felh)){exit();}
 <div class='col-3'></div>
 <div class='col-6'>
 <h1>Saját adatok módosítása</h1>
-<form method='post' action='modosit.php'>";
+<form id='form' method='post' action='modosit.php'>";
 
 
 foreach($felh as $key=>$value){
@@ -44,7 +44,9 @@ foreach($felh as $key=>$value){
     
 echo"
 
-<input class='btn btn-primary' type='submit' value='Módosítás'>
+<input id='isChange' name='isChange' value='1' hidden>
+<button class='btn btn-primary' value='Módosítás' onclick='deleteAcc(1)'>Módosítás</button>
+<button class='btn btn-danger' onclick='deleteAcc(0)'>Felhasználói fiók törlése</button>
 </form>
 
 </div>
@@ -61,5 +63,11 @@ echo"
 
 </body>
 </html>
+<script>
+    function deleteAcc(x){
+        document.getElementById('isChange').value = x;
+        document.getElementById('form').submit();
+    }
 
+</script>
 
