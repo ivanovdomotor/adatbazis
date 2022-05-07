@@ -26,6 +26,28 @@ if(!isset($felh)){exit();}
 <h1>Saját adatok módosítása</h1>
 <form id='form' method='post' action='modosit.php'>";
 
+if(isset($_POST["nincs_valtozas"])){
+echo "
+            <div class='alert alert-danger' role='alert'>
+              Nem történt változtatás a felhasználónévben!
+            </div>
+            ";
+}
+if(isset($_POST["letezo_felhasznalo"])){
+    echo "
+            <div class='alert alert-danger' role='alert'>
+              Már létezik ilyen nevű felhasználó, így a felhasználónév nem módosítható!
+            </div>
+            ";
+}
+if(isset($_POST["sikeres1"])){
+    echo "
+            <div class='alert alert-success' role='alert'>
+              Sikeres művelet!
+            </div>
+            ";
+}
+
 
 foreach($felh as $key=>$value){
     echo"

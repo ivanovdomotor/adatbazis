@@ -27,6 +27,14 @@ $_SESSION["page"] = "login.php";
             ";
         }
 
+        if(isset($_POST["sikeres"])){
+            echo "
+            <div class='alert alert-success' role='alert'>
+              A felhasználó sikeresen törölve lett!
+            </div>
+            ";
+        }
+
         if(isset($_POST["hibas_felhasznalo"])){
             echo "
             <div class='alert alert-danger' role='alert'>
