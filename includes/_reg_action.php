@@ -167,7 +167,7 @@ if(!isset($_POST["login"]) ||
                 }
             }else{
 
-                $sql_text = "INSERT INTO ALLASKERESO(
+                $sql_text = "INSERT INTO ALLASHIRDETO(
                         ID, 
                         TITULUS, 
                         VEZETEKNEV, 
@@ -176,7 +176,7 @@ if(!isset($_POST["login"]) ||
                         TELEFONSZAM,
                         EMAIL)
     VALUES(
-           {$allaskereso_id}, 
+           {$allashirdeto_id}, 
            '{$_POST["titulus"]}',
            '{$_POST["vezeteknev"]}',
            '{$_POST["keresztnev"]}',
