@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - péntek-május-06-2022   
+--  File created - szombat-május-07-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table ADMINMEGJEGYZES
@@ -211,6 +211,16 @@ Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('2',to_date('22
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('3',to_date('22-MÁRC. -02','RR-MON-DD'),'Adminmegjegyzés példa');
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('4',to_date('21-MÁJ.  -21','RR-MON-DD'),'Ezt a kedvenc adminotok írta.');
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('5',to_date('18-MÁJ.  -19','RR-MON-DD'),'Ez az ötödik adminmegjegyzés az oldalon.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('6',to_date('22-MÁJ.  -05','RR-MON-DD'),'Adminmegjegyzés a legjobb megjegyzés.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('7',to_date('22-MÁJ.  -12','RR-MON-DD'),'A hetedik adminmegjegyzés');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('8',to_date('22-MÁJ.  -01','RR-MON-DD'),'Igen, ez egy adminmegjegyzés.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('9',to_date('22-MÁJ.  -03','RR-MON-DD'),'Adminmegjegyzés 4ever.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('10',to_date('22-MÁJ.  -02','RR-MON-DD'),'Az adminok szeretnek megjegyzéseket tenni.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('11',to_date('22-MÁJ.  -02','RR-MON-DD'),'Adminok jegyeznek meg dolgokat.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('12',to_date('22-MÁJ.  -02','RR-MON-DD'),'Ez a 12. adminmegjegyzés.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('13',to_date('22-ÁPR.  -06','RR-MON-DD'),'Éjfél van, és én adminmegjegyzéseket írok.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('14',to_date('22-MÁJ.  -02','RR-MON-DD'),'adasdjasdklj, mármint adminmegjegyzés.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('15',to_date('22-JAN.  -06','RR-MON-DD'),'A 15. adminmegjegyzés, im done.');
 REM INSERTING into IVANOV.ALLASHIRDETO
 SET DEFINE OFF;
 Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('1',null,'Slendrion','Endre','4_pfpic.jpg','06-70-987-9876','slendrian70@gmail.com');
@@ -218,9 +228,33 @@ Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TEL
 Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('3',null,'Tordai','István',null,'06-50-276-2354','tordai.allas@citromail.hu');
 Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('4','Dr.','Herczeg','József',null,'06-20-658-9942','hercegmunka@freemail.hu');
 Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('5','Dr.','Vörös','Erzsébet',null,'06-30-123-5821','allashirdetes@gmail.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('6',null,'Vörös','Erik',null,'06-70-343-1234','mimidol2@antawii.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('7',null,'Lengyel','Alex',null,'06-30-935-1742','flyalone@enwsueicn.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('8',null,'Bakos','Rudolf',null,'06-20-174-3920','phillyma2008@nonise.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('9',null,'Illés','Ákos',null,'06-20-593-1832','speedfreak32@mailpluss.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('10','Dr.','Török','János',null,'06-20-193-3928','jmwilli2@soccerfit.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('11',null,'Pál ','Petra',null,'06-30-193-2810','manni02@oygkt.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('12',null,'Kozma','Júlia',null,'06-30-292-1923','billykt@bentsgolf.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('13',null,'Szabó','Kata',null,'06-20-192-2938','pwnjaloyn@fireblazevps.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('14','Dr.','Barma','Zsanett',null,'06-70-111-4253','vmdbc@nonise.com');
+Insert into IVANOV.ALLASHIRDETO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,TELEFONSZAM,EMAIL) values ('15','Dr.','Gáspár','Ágnes',null,'06-70-194-2856','tiiaait@vemail.site');
 REM INSERTING into IVANOV.ALLASKERESO
 SET DEFINE OFF;
 Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('1','Dr.','Példa','Béla',null,to_date('07-MÁJ.  -15','RR-MON-DD'),'6723 Szeged, Példa utca 1.','6723 Szeged, Példa utca 1.','30',null,'Rendkívüli módon átlagos','Szeret példa lenni.','06-20-999-9999','pelda.bela@pelda.com');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('2',null,'Bálint','Arnold',null,to_date('75-MÁJ.  -16','RR-MON-DD'),'6831 Balatonszepezd, Rákóczi út 98.','6831 Balatonszepezd, Rákóczi út 98.','10',null,'Rövid barna hajam van, szakállas vagyok.',null,'06-20-392-2912','ksenianowikova@devfiltr.com');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('3',null,'Fehér','Zalán',null,to_date('96-MÁJ.  -17','RR-MON-DD'),'7362 Tarrós, Szilágyi Erzsébet fasor 13.','7362 Tarrós, Szilágyi Erzsébet fasor 13.','15',null,'Szeretek tanulni.',null,'06-20-192-3292','tatvadim@reconditionari-turbosuflante.com');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('4','Dr.','Váradi','Domonkos',null,to_date('77-AUG.  -11','RR-MON-DD'),'9723 Lukácsháza, Belgrád rkp. 4.','9723 Lukácsháza, Belgrád rkp. 4.','20',null,'A kedvenc ételem a saláta.',null,'06-20-129-5392','brenoccosta@dluerei.com');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('5',null,'Virág','Ármin',null,to_date('43-DEC.  -17','RR-MON-DD'),'4975 Méhtelek, Apor Péter u. 62.','4975 Méhtelek, Apor Péter u. 62.','25',null,'A kedvenc színem a piros.','A vezetéknevem Virág.','06-20-294-2842','filipfindtarget@thecirchotelhollywood.com');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('6',null,'Kerekes','Endre',null,to_date('00-MÁJ.  -18','RR-MON-DD'),'8723 Somogycsicsó, Nánási út 64.','8723 Somogycsicsó, Nánási út 64.','30',null,'Szeretek futni.',null,'06-20-123-5432','chuckalugk@thekangsua.com');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('7',null,'Deák','Renáta',null,to_date('78-JÚN.  -08','RR-MON-DD'),'8681 Bakonyjákó, Kárpát u. 1.','8681 Bakonyjákó, Kárpát u. 1.','1',null,'Szeretek focizni.',null,'06-20-112-2392','judy0611@asifboot.com');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('8',null,'Zobor','Andrea',null,to_date('02-JÚN.  -06','RR-MON-DD'),'2671 Õrhalom, Hegedûs Gyula utca 7.','2671 Õrhalom, Hegedûs Gyula utca 7.','45',null,'Hosszú, barna hajam van.',null,'06-20-291-3292','davidcor@longdz.site');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('9',null,'Somogyi','Orsolya',null,to_date('55-JAN.  -21','RR-MON-DD'),'6412 Balotaszállás, Dayka Gábor u. 40.','6412 Balotaszállás, Dayka Gábor u. 40.','80',null,'Rövid, göndör fekete hajam van.','Gördeszkázok szabadidõmben','06-20-392-3842','sah1prcipx@sameleik.site');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('10','Dr.','Szabó','Ramóna',null,to_date('22-MÁJ.  -18','RR-MON-DD'),'1186 Budapest, Árpád fejedelem útja4.','1186 Budapest, Árpád fejedelem útja4.','110',null,'Szeretem a kutyákat.',null,'06-20-693-2183','ludmilaswelt@sameleik.site');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('11',null,'Somogyi','Vivien',null,to_date('97-AUG.  -13','RR-MON-DD'),'8000 Székesfehérvár, Teréz krt. 36.','8000 Székesfehérvár, Teréz krt. 36.','40',null,'Szeretek zenélni.',null,'06-20-392-4832','botatt@tekkoree.gq');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('12',null,'Bács','Boglárka',null,to_date('79-JAN.  -20','RR-MON-DD'),'6922 Földeák, Nagytétényi út 72.','6922 Földeák, Nagytétényi út 72.','30',null,'Sokat tanultam az egyetemen.',null,'06-20-912-2394','mordulkin@playfuny.com');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('13',null,'Mezei','Vanessza',null,to_date('94-OKT.  -13','RR-MON-DD'),'9721 Gencsapáti, Belgrád rkp. 60.','9721 Gencsapáti, Belgrád rkp. 60.','50',null,'Keveset tanultam az egyetemen.','Nem mezõn lakom.','06-20-383-3888','geha1@tekkoree.gq');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('14',null,'Borbély','Liliána',null,to_date('90-ÁPR.  -20','RR-MON-DD'),'4285 Álmosd, Tompa u. 46.','4285 Álmosd, Tompa u. 46.','70',null,'Nem félek, nem fázok.',null,'06-20-295-3453','meramit@hstuie.com');
+Insert into IVANOV.ALLASKERESO (ID,TITULUS,VEZETEKNEV,KERESZTNEV,FENYKEP_UT,SZULIDO,LAKCIM,TARTHELY,RADIUS,ONELETRAJZ_ID,ROVID_LEIRAS,EGYEB_INFO,TELEFONSZAM,EMAIL) values ('15',null,'Bogdán','Kristóf',null,to_date('22-MÁJ.  -12','RR-MON-DD'),'9796 Horvátlövõ, Belgrád rkp. 8.','9796 Horvátlövõ, Belgrád rkp. 8.','110',null,'Kék színû a szemem.',null,'06-20-523-3943','kosvalera@tunhide.com');
 REM INSERTING into IVANOV.CEG
 SET DEFINE OFF;
 Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('1','McDonalds','1_ceg.jpg','A Mcdonalds egy hamburgereket forgalmaz? nemzetk?zi gyors?ttereml?nc.','06-70-123-4567','mc@donal.ds');
@@ -228,54 +262,110 @@ Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values
 Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('3','Facebook','3_ceg.png','A Facebook amerikai alapítású közösségi hálózat, amely 2004. február 4-én kezdte meg mûködését.','06-20-948-3243','alien@mars.com');
 Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('4','SZTE','4_ceg.png','A Szegedi Tudományegyetem (röviden: SZTE) – Universitas Scientiarum Szegediensis / University of Szeged – Magyarországon, Szeged városában mûködõ,  alapítvány által fenntartott felsõoktatási intézmény.','06-70-827-9125','szte@szte.hu');
 Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('5','Google','5_ceg.png','A Google LLC amerikai, tõzsdén bejegyzett részvénytársaság, amit eredetileg zártkörûen mûködõ társaságként alapítottak 1998-ban, és aminek a nevéhez fûzõdik a Google keresõmotor kifejlesztése és üzemeltetése.','06-30-265-1958','google@yahoo.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('6','ELTE','6_ceg.png','Az Eötvös Loránd Tudományegyetem Magyarország leghosszabb ideje folyamatosan mûködõ egyeteme.','06-20-593-2932','olgailyushchenko49@tigo.tk');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('7','Adidas','7_ceg.png','Az Adidas német sportszergyártó cégcsoport.','06-20-539-3912','vladnechkin@soccerfit.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('8','Youtube','8_ceg.png','A YouTube nyilvános videómegosztó webhely.','06-20-492-1111','spanky49@omdlism.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('9','Sarki kisbolt','9_ceg.png','Egy aprócska bolt a sarkon.','06-20-691-2931','qa7kbz6evm@usbvap.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('10','Yahoo','10_ceg.png','A Yahoo! a Yahoo! Inc. amerikai cég védjegye, amellyel egy internetes portált és katalógust üzemeltet. ','06-20-793-1294','edwardcorn@typery.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('11','Twitch','11_ceg.png','A Twitch.tv egy videójáték-közvetítéssel foglalkozó weboldal.','06-20-693-1923','zhul@outlook.sbs');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('12','Pinterest','12_ceg.png','A Pinterest egy amerikai közösségi képmegosztó weboldal.','06-20-593-2913','finik2002@typery.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('13','Reddit','13_ceg.png','A Reddit egy közösségi weboldal.','06-20-129-5932','43844168@inadtia.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('14','LinkedIn','14_ceg.png','A LinkedIn a világ legnagyobb üzleti közösségi hálózata.','06-20-693-2193','ditka80@tednbe.com');
+Insert into IVANOV.CEG (ID,NEV,FENYKEP_UT,ROVID_LEIRAS,TELEFONSZAM,EMAIL) values ('15','Magyar Rendõrség','15_ceg.png','A Rendõrség - Magyarország állami szintû rendõrsége.','06-20-794-1293','ggunsolley@nonise.com');
 REM INSERTING into IVANOV.FELHASZNALO
 SET DEFINE OFF;
-Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('6','munkas','munkas','0','0','1','0');
-Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('7','munkahirdeto','munkahirdeto','0','0','0','3');
-Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('8','kistamas','kistamas','1','0','1','0');
-Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('9','erdekel','erdekel','1','0','1','0');
-Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('10','pekmester','pekmester','1','0','1','0');
-Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('11','munkakerulo','munkakerulo','1','0','1','0');
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('6','munkas','munkas','0','0','1',null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('7','munkahirdeto','munkahirdeto','0','0',null,'1');
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('8','kistamas','kistamas','1','0','2',null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('9','erdekel','erdekel','1','0','3',null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('10','pekmester','pekmester','1','0','4',null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('11','munkakerulo','munkakerulo','1','0','5',null);
 Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('1','ivanov','ivanov','1','1',null,null);
 Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('2','admin','admin','1','1',null,null);
-Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('3','felh1','felh1','1','0','1',null);
-Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('4','slendrianodon','slendrianodon','1','0','0','5');
-Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('5','hespi','hespi','1','0','1','0');
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('3','felh1','felh1','1','0','6',null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('4','slendrianodon','slendrianodon','1','0',null,'2');
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('5','hespi','hespi','1','0','7',null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('12','jozsi','jozsi','0','0',null,'3');
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('13','test','test','1','0',null,'4');
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('14','allashirdeto','allashirdeto','1','0',null,'5');
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('15','test2','test2','1','0','8',null);
 REM INSERTING into IVANOV.HIRDETES
 SET DEFINE OFF;
-Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('6','Hentes','Szeged','1','Teljes munkaidõ','Szarvasmarha, juh és ló levágásával kell foglalkozni.','Hentes végzettség','Saját autó.',null,to_date('23-MÁJ.  -20','RR-MON-DD'),'1','3','2');
-Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('1','Takarító','Szeged','1','Teljes munkaidõ','Áruházak tisztítása, parkolóban felmosás.','Egyetemi diploma','Külföldi doktorandusz képzés.','Napi egyszeri étkezés.',to_date('23-MÁJ.  -19','RR-MON-DD'),'1','1','1');
-Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('2','Programozó','Pécs','0','Teljes munkaidõ','Programok írása, diszkrét matekkal foglalkozás.','Smalltalk ismerete.','Kalkulus ismerete.','Utazási költésgtérítés.',to_date('24-MÁJ.  -24','RR-MON-DD'),'1','2','2');
-Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('3','Hegesztõ','Budapest','1','Részmunkaidõ','Hegesztés megrendelések alapján.','Elõzetes munkatapasztalat.',null,'Munkaegyenruha.',to_date('26-MÁJ.  -22','RR-MON-DD'),'1','3','3');
-Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('4','Úrhajós','Szolnok','0','Részmunkaidõ','Ûrben hajózás.','Ne félj az ûrtõl.','Ne félj a hajóktól.','A munkábajárás munkaidõnek minõsül.',to_date('22-JÚL.  -16','RR-MON-DD'),'1','4','4');
-Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('5','Pék','Szeged','1','Teljes munkaidõ','Kenyeret és cirkuszt adni a népnek.','Pék végzettség.',null,'Egyenruha és cipõ.',to_date('22-AUG.  -19','RR-MON-DD'),'1','5','5');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('6','Hentes','Szeged','1','Teljes munkaidõ','Szarvasmarha, juh és ló levágásával kell foglalkozni.','Hentes végzettség','Saját autó.',null,to_date('23-MÁJ.  -20','RR-MON-DD'),'1','6','1');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('1','Takarító','Szeged','1','Teljes munkaidõ','Áruházak tisztítása, parkolóban felmosás.','Egyetemi diploma','Külföldi doktorandusz képzés.','Napi egyszeri étkezés.',to_date('23-MÁJ.  -19','RR-MON-DD'),'1','1','2');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('2','Programozó','Pécs','0','Teljes munkaidõ','Programok írása, diszkrét matekkal foglalkozás.','Smalltalk ismerete.','Kalkulus ismerete.','Utazási költésgtérítés.',to_date('24-MÁJ.  -24','RR-MON-DD'),'1','2','3');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('3','Hegesztõ','Budapest','1','Részmunkaidõ','Hegesztés megrendelések alapján.','Elõzetes munkatapasztalat.',null,'Munkaegyenruha.',to_date('26-MÁJ.  -22','RR-MON-DD'),'1','3','4');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('4','Úrhajós','Szolnok','0','Részmunkaidõ','Ûrben hajózás.','Ne félj az ûrtõl.','Ne félj a hajóktól.','A munkábajárás munkaidõnek minõsül.',to_date('22-JÚL.  -16','RR-MON-DD'),'1','4','5');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('5','Pék','Szeged','1','Teljes munkaidõ','Kenyeret és cirkuszt adni a népnek.','Pék végzettség.',null,'Egyenruha és cipõ.',to_date('22-AUG.  -19','RR-MON-DD'),'1','5','6');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('7','Állatgondozó','Szeged','1','Teljes munkaidõ','Állatok gondozása.','Érettségi.',null,'Kultúra utalvány.',to_date('22-MÁJ.  -31','RR-MON-DD'),'1','7','7');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('8','Általános ápoló','Baja','1','Teljes munkaidõ','Emberek ápolása','Éjszakák vállalása.',null,'Ajándékutalvány.',to_date('22-MÁJ.  -25','RR-MON-DD'),'1','8','8');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('9','Aranykalászos gazda','Békéscsaba','1','Teljes munkaidõ','Gazdálkodás hébe-hóba.','Aranykalászos gazda végzettség.','Érettségi.','Pacsi a fõnöktõl.',to_date('22-MÁJ.  -19','RR-MON-DD'),'1','9','9');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('10','Adótanácsadó','Bácsszõlõs','0','Részmunkaidõ','Tanácsokat adni adókkal kapcsolatban','Önálló vállalkozói tapasztalat.',null,'Ingyenes teniszbérlet.',to_date('22-MÁJ.  -18','RR-MON-DD'),'0','10','10');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('11','Artista','Jánoshalma','0','Teljes munkaidõ','Artistáskodás hébe-hóba.','Érettségi.',null,'Kedves mosoly a fõnöktõl.',to_date('22-MÁJ.  -29','RR-MON-DD'),'0','11','11');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('12','Általános laboráns','Mátételke','0','Részmunkaidõ','Laborfeladatok ellátása.','Érettségi.','Egyetemi diploma.','Extra fizetés.',to_date('22-MÁJ.  -23','RR-MON-DD'),'0','12','12');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('13','Szerelõ','Újszentiván','1','Részmunkaidõ','Dolgok megszerelése.','Érettségi.',null,'SZÉP-kártya.',to_date('22-MÁJ.  -19','RR-MON-DD'),'1','13','13');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('14','Eladó','Felsõszentiván','0','Teljes munkaidõ','Dolgok eladása.','Szakmai tapasztalat.','Eladó végzettség.','Cafetéria.',to_date('22-MÁJ.  -21','RR-MON-DD'),'1','14','14');
+Insert into IVANOV.HIRDETES (ID,MEGNEVEZES,MUNKAVEGZESHELYE,IDO,MUNKAREND,MUNKAFELADATLEIRAS,KOTELVARAS,OPCELVARAS,JUTTATASOK,JELENTKEZESIHATARIDO,STATUS,CEGID,ALLASHIRDETOID) values ('15','Becsûs','Sopron','1','Részmunkaidõ','Dolgok felbecslése.','Korábban szerzett tapasztalat.','Szakmai végzettség.','Ajándék vidámpark-belépõ.',to_date('22-MÁJ.  -26','RR-MON-DD'),'0','15','15');
 REM INSERTING into IVANOV.ONELETRAJZ
 SET DEFINE OFF;
 Insert into IVANOV.ONELETRAJZ (ID,VEGZETTSEG_ID,TAPASZTALAT_ID,SOFTSKILL_ID,REFERENCIA_ID) values ('1','1,2','1,2,3','1,2,3,4',null);
 REM INSERTING into IVANOV.SOFTSKILL
 SET DEFINE OFF;
 Insert into IVANOV.SOFTSKILL (ID,NEV) values ('1','pontos');
-Insert into IVANOV.SOFTSKILL (ID,NEV) values ('2','j? vezet?');
-Insert into IVANOV.SOFTSKILL (ID,NEV) values ('3','k?nnyen alkalmazkod?');
-Insert into IVANOV.SOFTSKILL (ID,NEV) values ('4','hat?rozott');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('2','jó vezetõ');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('3','könnyen alkalmazkodó');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('4','határozott');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('5','szorgalmas');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('6','bátor');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('7','megállíthatatlan');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('8','lenyûgözõ');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('9','dolgos');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('10','rugalmas');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('11','gyors');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('12','precíz');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('13','vidám');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('14','pörgõs');
+Insert into IVANOV.SOFTSKILL (ID,NEV) values ('15','lelkes');
 REM INSERTING into IVANOV.TAPASZTALAT
 SET DEFINE OFF;
-Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('3','Egy?ni v?llalkoz?s',to_date('20-FEBR. -01','RR-MON-DD'),null,'Laboreszk?z?k ?s anyagok beszerz?se, elsz?ll?t?sa');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('1','Egyeni vállalkozás',to_date('20-FEBR. -01','RR-MON-DD'),null,'Laboreszközök beszerzése.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('2','Sarki kisbolt',to_date('12-MÁJ.  -10','RR-MON-DD'),to_date('18-MÁJ.  -17','RR-MON-DD'),'Tárgyak eladása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('3','Bajai klinika',to_date('14-MÁJ.  -09','RR-MON-DD'),to_date('17-MÁJ.  -05','RR-MON-DD'),'Klinikai feladatok ellátása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('4','Rendõrség',to_date('18-MÁJ.  -12','RR-MON-DD'),to_date('21-MÁJ.  -01','RR-MON-DD'),'Rendõri feladatok ellátása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('5','Mercedes Gyár',to_date('16-MÁJ.  -18','RR-MON-DD'),to_date('19-MÁJ.  -16','RR-MON-DD'),'Gyári összeszerelõ munkák ellátása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('6','Novotel',to_date('21-NOV.  -18','RR-MON-DD'),to_date('22-MÁJ.  -01','RR-MON-DD'),'Szállodai feladatok ellátása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('7','Szeged NOVA',to_date('13-MÁJ.  -30','RR-MON-DD'),to_date('21-DEC.  -10','RR-MON-DD'),'Eladói feladatok ellátása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('8','Tesco',to_date('12-AUG.  -08','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'Termékek árulása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('9','SZTE',to_date('06-MÁJ.  -18','RR-MON-DD'),to_date('22-MÁJ.  -03','RR-MON-DD'),'Kurzusok tartása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('10','ELTE',to_date('03-MÁJ.  -08','RR-MON-DD'),to_date('22-MÁJ.  -03','RR-MON-DD'),'Kurzusok tartása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('11','Lovascsárda',to_date('12-MÁJ.  -11','RR-MON-DD'),to_date('21-NOV.  -17','RR-MON-DD'),'Lovak etetése.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('12','Parlament',to_date('19-MÁJ.  -08','RR-MON-DD'),to_date('20-JAN.  -02','RR-MON-DD'),'Üldögélés.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('13','Youtube',to_date('17-MÁJ.  -11','RR-MON-DD'),to_date('20-MÁJ.  -08','RR-MON-DD'),'Videók készítése.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('14','Magyar Nemzeti Bank',to_date('17-OKT.  -04','RR-MON-DD'),to_date('22-FEBR. -10','RR-MON-DD'),'Banki feladatok ellátása.');
+Insert into IVANOV.TAPASZTALAT (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('15','Árkád',to_date('16-MÁJ.  -10','RR-MON-DD'),to_date('21-NOV.  -03','RR-MON-DD'),'Bombariadók elõl menekülés.');
 REM INSERTING into IVANOV.TEST
 SET DEFINE OFF;
 Insert into IVANOV.TEST (ID,FELHASZNALONEV,JELSZO,STATUS) values ('1','Asd','sdsasdsads','1');
 Insert into IVANOV.TEST (ID,FELHASZNALONEV,JELSZO,STATUS) values ('1','Asd','sdsasdsads','1');
+Insert into IVANOV.TEST (ID,FELHASZNALONEV,JELSZO,STATUS) values ('1','Asd','sdsasdsads','1');
+Insert into IVANOV.TEST (ID,FELHASZNALONEV,JELSZO,STATUS) values ('1','Asd','sdsasdsads','1');
 REM INSERTING into IVANOV.VEGZETTSEG
 SET DEFINE OFF;
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('2','Krúdy Szakközépiskola',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'Vendéglátó végzettség');
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('3','ÁMK TK',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'Érettségi bizonyítvány');
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('4','Tataházi Általános Iskola',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'8 általános végzettség.');
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('5','Szakképzõ Centrum',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'Pék végzettség');
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('6','Az élet iskolája',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'Isten volt a tanár');
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('1','SZTE',to_date('09-JAN.  -01','RR-MON-DD'),to_date('14-JAN.  -01','RR-MON-DD'),'Gyógyszerész BSc');
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('8','PKE',to_date('14-JAN.  -01','RR-MON-DD'),to_date('16-JAN.  -01','RR-MON-DD'),'Laborbiztons?gi technikusi szakir?ny? tov?bbk?pz?s');
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('9','SZTE',to_date('20-MÁJ.  -15','RR-MON-DD'),to_date('21-MÁJ.  -21','RR-MON-DD'),'Programtervezõ informatikus BSc');
-Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('10','BME',to_date('22-JAN.  -05','RR-MON-DD'),to_date('22-MÁJ.  -02','RR-MON-DD'),'Villamosmérnök MSc');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('16','Krúdy Szakközépiskola',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'Vendéglátó végzettség');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('17','ÁMK TK',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'Érettségi bizonyítvány');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('18','Tataházi Általános Iskola',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'8 általános végzettség.');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('19','Szakképzõ Centrum',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'Pék végzettség');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('20','Az élet iskolája',to_date('20-MÁJ.  -07','RR-MON-DD'),to_date('21-MÁJ.  -07','RR-MON-DD'),'Isten volt a tanár');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('21','SZTE',to_date('09-JAN.  -01','RR-MON-DD'),to_date('14-JAN.  -01','RR-MON-DD'),'Gyógyszerész BSc');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('7','PKE',to_date('14-JAN.  -01','RR-MON-DD'),to_date('16-JAN.  -01','RR-MON-DD'),'Laborbiztons?gi technikusi szakir?ny? tov?bbk?pz?s');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('8','SZTE',to_date('20-MÁJ.  -15','RR-MON-DD'),to_date('21-MÁJ.  -21','RR-MON-DD'),'Programtervezõ informatikus BSc');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('9','BME',to_date('22-JAN.  -05','RR-MON-DD'),to_date('22-MÁJ.  -02','RR-MON-DD'),'Villamosmérnök MSc');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('10','III. Béla Gimnázium',to_date('16-MÁJ.  -07','RR-MON-DD'),to_date('22-MÁJ.  -07','RR-MON-DD'),'Kéttannyelvû érettségi.');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('11','Szent László ÁMK',to_date('18-MÁJ.  -10','RR-MON-DD'),to_date('22-MÁJ.  -03','RR-MON-DD'),'Gimnáziumi érettségi.');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('12','Szakképzõ centrum',to_date('22-JAN.  -01','RR-MON-DD'),to_date('22-MÁJ.  -06','RR-MON-DD'),'Biztonsági õr végzettség.');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('13','Szakképzõ centrum',to_date('22-JAN.  -15','RR-MON-DD'),to_date('22-MÁRC. -09','RR-MON-DD'),'Bolti eladó végzettség.');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('14','Szakképzõ centrum',to_date('21-AUG.  -13','RR-MON-DD'),to_date('22-FEBR. -09','RR-MON-DD'),'Pincér végzettség.');
+Insert into IVANOV.VEGZETTSEG (ID,HELY,IDO_KEZDET,IDO_VEG,LEIRAS) values ('15','Mátételki Általános Iskola',to_date('16-JÚN.  -16','RR-MON-DD'),to_date('22-MÁJ.  -07','RR-MON-DD'),'Általános iskolai végzettség.');
 --------------------------------------------------------
 --  DDL for Index ALLASKERESO_PK
 --------------------------------------------------------
