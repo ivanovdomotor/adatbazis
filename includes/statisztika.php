@@ -1,5 +1,9 @@
 <?php
 session_start();
+if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["isAllashirdeto"] != 1){
+    header("Location: login.php");
+    exit;
+}
 ?>
 
 <html>
@@ -45,6 +49,47 @@ session_start();
             </div>
         </div>
     </div>
+
+
+
+    <?php
+    include "getfelhasznalo2.php";
+    $felhasznalo = [];
+    if(isset($mymap)){
+        $felhasznalo = $mymap;
+    }
+
+    $i = 0;
+
+
+    echo"
+<h3>Az adatbázisban szereplő felhasználók:</h3>
+";
+
+    foreach($felhasznalo as $row){
+        if ($felhasznalo[$i]["IS_ADMIN"] == 1){
+            $adminstatus = "egy admin";
+        } else {
+            $adminstatus = "egy felhasznalo";
+        }
+
+        echo"
+        <div class='felhasznalok'>
+            <h5>{$felhasznalo[$i]["FELHASZNALONEV"]} $adminstatus</h5>
+      </div>
+        ";
+
+
+        $i++;
+    }
+    echo "
+    </div>
+    ";
+
+
+    ?>
+
+
 
 
     </body>
