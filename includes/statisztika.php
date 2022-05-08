@@ -90,6 +90,39 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
     ";
 
 
+    include "getallaskereso.php";
+    $allaskereso = [];
+    if (isset($mymap)) {
+        $allaskereso = $mymap;
+    }
+
+
+
+
+
+    $i = 0;
+
+
+    echo "
+<h3>Az adatbázisban szereplő álláskeresők:</h3>
+";
+
+    foreach ($allaskereso as $row) {
+
+        echo "
+        <div class='allaskereso'>
+            <h5>{$allaskereso[$i]["TITULUS"]} {$allaskereso[$i]["VEZETEKNEV"]} {$allaskereso[$i]["KERESZTNEV"]} </h5>
+      </div>
+        ";
+
+
+        $i++;
+    }
+    echo "
+    </div>
+    ";
+
+
     ?>
 
 
