@@ -39,6 +39,8 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
                     <tr><th>Sarki kisboltbéli tapasztalattal rendelkező önéletrajzok száma, akik jó vezetők:</th><th><?php include "kisboltjovezeto.php";?></th></tr>
                     <tr><th>SZTE-n, a PTE-n vagy a PKE-n végzettek száma:</th><th><?php include "egyetem.php";?></th></tr>
                     <tr><th>Az élet iskolájában tanultak száma:</th><th><?php include "egyetem2.php";?></th></tr>
+                    <tr><th>Az SZTE-n végzett rugalmas softskillt tartalmazó önéletrajzok száma:</th><th><?php include "szterugalmas.php";?></th></tr>
+                    <tr><th>Rendőrségi tapasztalattal rendelkező határozott softskillt tartalmazó önéletrajzok száma:</th><th><?php include "rendorseghatarozott.php";?></th></tr>
 
 
                     </tbody>
