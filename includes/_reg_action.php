@@ -33,34 +33,42 @@ if(!isset($_POST["login"]) ||
 
     }else{
 
+        if($_POST["isAllaskereso"] == 'yes'){
+            $kepnev = "kep-a";
+        }else{
+            $kepnev = "kep-b";
+        }
 
-        $target_dir = "../profilepics/";
-        $imageFileType = strtolower(pathinfo(basename($_FILES["kep"]["name"]),PATHINFO_EXTENSION));
-        $fenykep_ut = $felhasznalo_id . "_pfpic_" . $_POST["login"]. ".{$imageFileType}";
-        $target_file = $target_dir . $fenykep_ut;
         $uploadOk = 1;
+        if(isset($_FILES[$kepnev]["name"]) && $_FILES[$kepnev]["name"] !== ""){
 
-        if ($_FILES["kep"]["size"] > 500000) {
-            echo "
+            $target_dir = "../profilepics/";
+            $imageFileType = strtolower(pathinfo(basename($_FILES[$kepnev]["name"]),PATHINFO_EXTENSION));
+            $fenykep_ut = $felhasznalo_id . "_pfpic_" . $_POST["login"]. ".{$imageFileType}";
+            $target_file = $target_dir . $fenykep_ut;
+
+            if ($_FILES[$kepnev]["size"] > 500000) {
+                echo "
             <form action='reg.php' method='post' id='tul_nagy_kep' hidden>
             <input name='tul_nagy_kep' value='1'>
             
             </form>";
-            $uploadOk = 0;
-        }
+                $uploadOk = 0;
+            }
 
-        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
-            echo "
+            if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
+                echo "
             <form action='reg.php' method='post' id='nem_jo_format' hidden>
             <input name='nem_jo_format' value='1'>
             
             </form>";
-            $uploadOk = 0;
-        }
+                $uploadOk = 0;
+            }
 
+        }
         if ($uploadOk == 1) {
 
-            move_uploaded_file($_FILES["kep"]["tmp_name"], $target_file);
+            move_uploaded_file($_FILES[$kepnev]["tmp_name"], $target_file);
             if($_POST["isAllaskereso"] == 'yes'){
 
                 $sql_text="SELECT ID FROM ALLASKERESO ORDER BY ID DESC";
@@ -220,12 +228,10 @@ echo "
     function toLog(){
         window.location.href = "login.php";
     }
-
     mysubmit('hiba');
     mysubmit('letezo_felhasznalo');
     mysubmit('tul_nagy_kep');
     mysubmit('nem_jo_format');
-
 
 
 </script>

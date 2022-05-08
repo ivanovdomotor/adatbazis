@@ -89,9 +89,9 @@ $_SESSION["page"] = "reg.php";
                 <label for="keresztnév">Keresztnév név:</label>
                 <input required class="form-control" type="text" id="keresztnev-b" name="keresztnev" maxlength="50" tabindex="6" placeholder="János">
                 <br/>
-                <label for="kep">Profilkép: </label>
+                <label for="kep-b">Profilkép: </label>
                 <br/>
-                <input class="form-control" type="file" id="kep-b" name="kep" accept="image/*" tabindex="7"/>
+                <input class="form-control" type="file" id="kep-b" name="kep-b" accept="image/*" tabindex="7"/>
                 <br/>
                 <label for="telszam">Telefonszám:</label>
                 <input class="form-control" required type="tel" id="telszam" name="telszam" maxlength="14" placeholder="06-70-123-4567" tabindex="11" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}">
@@ -137,9 +137,9 @@ $_SESSION["page"] = "reg.php";
                 <label for="keresztnév">Keresztnév név:</label>
                 <input class="form-control" required type="text" id="keresztnev" name="keresztnev" maxlength="50" tabindex="6" placeholder="János">
                 <br/>
-                <label for="kep">Profilkép: </label>
+                <label for="kep-a">Profilkép: </label>
                 <br/>
-                <input class="form-control" type="file" id="kep" name="kep" accept="image/*" tabindex="7"/>
+                <input class="form-control" type="file" id="kep-a" name="kep-a" accept="image/*" tabindex="7"/>
                 <br/>
                 <label for="birthday">Születési idő:</label>
                 <input class="form-control" type="date" id="birthday" name="birthday" tabindex="8">
