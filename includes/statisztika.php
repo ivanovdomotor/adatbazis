@@ -33,8 +33,9 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
                     <tr><th>Álláskeresők száma:</th><th><?php include "_osszes_allaskereso.php";?></th></tr>
                     <tr><th>Álláshirdetők száma:</th><th><?php include "_osszes_allashirdeto.php";?></th></tr>
                     <tr><th>Önéletrajzok száma:</th><th><?php include "_osszes_oneletrajz.php";?></th></tr>
-                    <tr><th>Pontos vagy bátor softskillt tartalmazó önéletrajzok:</th><th><?php include "softskillcv.php";?></th></tr>
-                    <tr><th>Gyors és precíz softskillt tartalmazó önéletrajzok:</th><th><?php include "softskillcv2.php";?></th></tr>
+                    <tr><th>Pontos vagy bátor softskillt tartalmazó önéletrajzok száma:</th><th><?php include "softskillcv.php";?></th></tr>
+                    <tr><th>Gyors és precíz softskillt tartalmazó önéletrajzok száma:</th><th><?php include "softskillcv2.php";?></th></tr>
+                    <tr><th>Sarki kisboltbéli tapasztalattal rendelkező önéletrajzok száma:</th><th><?php include "kisbolt.php";?></th></tr>
 
 
                     </tbody>
