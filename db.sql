@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - szombat-május-07-2022   
+--  File created - vasárnap-május-08-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table ADMINMEGJEGYZES
@@ -210,6 +210,11 @@ Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('2',to_date('22
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('3',to_date('22-MÁRC. -02','RR-MON-DD'),'Adminmegjegyzés példa');
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('4',to_date('21-MÁJ.  -21','RR-MON-DD'),'Ezt a kedvenc adminotok írta.');
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('5',to_date('18-MÁJ.  -19','RR-MON-DD'),'Ez az ötödik adminmegjegyzés az oldalon.');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('16',to_date('22-JAN.  -05','RR-MON-DD'),'Tesztadminmegjegyzés');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('17',to_date('22-FEBR. -21','RR-MON-DD'),'Lol');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('18',to_date('22-MÁRC. -09','RR-MON-DD'),'Xd');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('19',to_date('22-ÁPR.  -04','RR-MON-DD'),'Adminmegjegyzéssadjk');
+Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('20',to_date('22-JAN.  -04','RR-MON-DD'),'Igen.');
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('6',to_date('22-MÁJ.  -05','RR-MON-DD'),'Adminmegjegyzés a legjobb megjegyzés.');
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('7',to_date('22-MÁJ.  -12','RR-MON-DD'),'A hetedik adminmegjegyzés');
 Insert into IVANOV.ADMINMEGJEGYZES (ID,IDOPONT,TARTALOM) values ('8',to_date('22-MÁJ.  -01','RR-MON-DD'),'Igen, ez egy adminmegjegyzés.');
@@ -284,6 +289,11 @@ Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKE
 Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('3','felh1','felh1','1','0','6',null);
 Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('4','slendrianodon','slendrianodon','1','0',null,'2');
 Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('5','hespi','hespi','1','0','7',null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('16','test3','test3','1','1',null,null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('17','test4','test4','1','1',null,null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('18','hentes','hentes','0','0','9',null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('19','mrpek','mrpek','0','0','10',null);
+Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('20','allasokathirdeto','allasokathirdeto','1','0',null,'1');
 Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('12','jozsi','jozsi','0','0',null,'3');
 Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('13','test','test','1','0',null,'4');
 Insert into IVANOV.FELHASZNALO (ID,FELHASZNALONEV,JELSZO,STATUS,IS_ADMIN,ALLASKERESO_ID,ALLASHIRDETO_ID) values ('14','allashirdeto','allashirdeto','1','0',null,'5');
