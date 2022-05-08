@@ -104,14 +104,14 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
 
 
     echo "
-<h3>Az adatbázisban szereplő álláskeresők:</h3>
+<h3>Az adatbázisban szereplő álláskeresők adatai:</h3>
 ";
 
     foreach ($allaskereso as $row) {
 
         echo "
         <div class='allaskereso'>
-            <h5>{$allaskereso[$i]["TITULUS"]} {$allaskereso[$i]["VEZETEKNEV"]} {$allaskereso[$i]["KERESZTNEV"]} </h5>
+            <h5>{$allaskereso[$i]["TITULUS"]} {$allaskereso[$i]["VEZETEKNEV"]} {$allaskereso[$i]["KERESZTNEV"]} Születési idő: {$allaskereso[$i]["SZULIDO"]} Lakcím: {$allaskereso[$i]["LAKCIM"]} Tartózkodási hely:  {$allaskereso[$i]["TARTHELY"]} Keresési rádiusz: {$allaskereso[$i]["RADIUS"]} Rövid leírás: {$allaskereso[$i]["ROVID_LEIRAS"]} Egyéb infó:  {$allaskereso[$i]["EGYEB_INFO"]} Telefonszám: {$allaskereso[$i]["TELEFONSZAM"]} </h5>
       </div>
         ";
 
