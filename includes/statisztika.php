@@ -41,7 +41,8 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
                     <tr><th>Az élet iskolájában tanultak száma:</th><th><?php include "egyetem2.php";?></th></tr>
                     <tr><th>Az SZTE-n végzett rugalmas softskillt tartalmazó önéletrajzok száma:</th><th><?php include "szterugalmas.php";?></th></tr>
                     <tr><th>Rendőrségi tapasztalattal rendelkező határozott softskillt tartalmazó önéletrajzok száma:</th><th><?php include "rendorseghatarozott.php";?></th></tr>
-
+                    <tr><th>Precíz vagy vidám softskillel rendelkező önéletrajzok száma, akik a Parlament-ben vagy a Youtube-nál rendelkeznek tapasztalattal:</th><th><?php include "preciz.php";?></th></tr>
+                    <tr><th>SZTE-s végzettséggel rendelkezők, akik bátrak vagy lenyűgözőek :</th><th><?php include "szte.php";?></th></tr>
 
                     </tbody>
 
