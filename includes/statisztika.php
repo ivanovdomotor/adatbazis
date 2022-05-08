@@ -124,8 +124,36 @@ if($_SESSION["isAdmin"] != 1 && $_SESSION["isAllaskereso"] != 1 && $_SESSION["is
     ";
 
 
-    ?>
 
+    include "getadminmegjegyzes.php";
+    $adminmegjegyzes = [];
+    if(isset($mymap)){
+        $adminmegjegyzes = $mymap;
+    }
+
+    $i = 0;
+
+
+    echo"
+<h3>Az adatbázisban szereplő adminmegjegyzések:</h3>
+";
+
+    foreach($adminmegjegyzes as $row){
+
+        echo"
+        <div class='adminmegjegyzes'>
+            <h5>ID: {$adminmegjegyzes[$i]["ID"]} Közzététel időpontja: {$adminmegjegyzes[$i]["IDOPONT"]} Tartalma: {$adminmegjegyzes[$i]["TARTALOM"]} </h5>
+      </div>
+        ";
+
+
+        $i++;
+    }
+
+    echo "
+    </div>
+    ";
+?>
 
 
 
