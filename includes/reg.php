@@ -164,7 +164,7 @@ $_SESSION["page"] = "reg.php";
                 <button class="btn alert-danger" type="reset" name="reset-btn" value="Adatok törlése" tabindex="10" onclick="erase()">
                     Adatok törlése
                 </button>
-                <button class="btn alert-primary" type="button" id="submit1" onclick="jelszoellenorzeshirdeto(this)" name="submit-btn" value="Regisztráció" tabindex="11">
+                <button class="btn alert-primary" type="button" id="submit1" onclick="jelszoellenorzeskereso()" name="submit-btn" value="Regisztráció" tabindex="11">
                     Regisztráció
                 </button>
             </div>
@@ -223,7 +223,6 @@ $_SESSION["page"] = "reg.php";
         if (jelszo !== jelszoismetles) {
             window.alert("A jelszavak nem egyeznek!");
         } else {
-            window.alert("TEST: A JELSZAVAK EGYEZNEK");
             document.getElementById('trueform-a').submit();
         }
     }

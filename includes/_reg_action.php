@@ -1,5 +1,6 @@
 <?php
 session_start();
+var_dump($_FILES);
 
 if(!isset($_POST["login"]) ||
     !isset($_POST["password"]) ||
@@ -235,4 +236,3 @@ echo "
 
 
 </script>
-
